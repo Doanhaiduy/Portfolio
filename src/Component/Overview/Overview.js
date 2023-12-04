@@ -55,7 +55,7 @@ function Overview() {
                             sequence={[" Doan Hai Duy", 4000, "  Doan Hai Duy", 4000, "   Doan Hai Duy", 4000]}
                             speed={50}
                             repeat={Infinity}
-                            className="uppercase font-bold text-7xl text-orange-500 my-1 "
+                            className="uppercase font-bold md:text-7xl text-4xl text-orange-500 my-1 "
                             wrapper="h2"
                         />
                     </motion.div>
@@ -65,7 +65,7 @@ function Overview() {
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: true, amount: 0.7 }}
-                    className="text-[20px] text-gray-600 dark:text-white mt-4 transition-colors"
+                    className="text-[16px] md:text-[20px] text-gray-600 dark:text-white mt-4 transition-colors"
                 >
                     <BiSolidQuoteAltLeft className="inline-block" /> Hello,{" "}
                     <TypeAnimation
@@ -87,9 +87,12 @@ function Overview() {
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: true, amount: 0.7 }}
-                    className="uppercase flex gap-6 items-center mt-12 font-medium text-2xl justify-center md:justify-start"
+                    className="uppercase flex gap-6 items-center mt-12 font-medium text-xl md:text-2xl justify-center md:justify-start"
                 >
-                    <a href="tel:0399998943" className="px-12 py-4 rounded-xl bg-orange-500 text-white">
+                    <a
+                        href="tel:0399998943"
+                        className="md:px-12  md:py-4 px-6 py-2 rounded-xl bg-orange-500 text-white"
+                    >
                         Contact Me
                     </a>
                     <a

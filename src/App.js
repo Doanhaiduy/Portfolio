@@ -1,4 +1,3 @@
-import "./App.css";
 import About from "./Component/About/About";
 import Footer from "./Component/Layout/Footer/Footer";
 import Header from "./Component/Layout/Header/Header";
@@ -9,7 +8,7 @@ import Skills from "./Component/Skills";
 
 function App() {
     return (
-        <div className="App bg-white dark:bg-black transition-colors ">
+        <div className=" bg-white dark:bg-black transition-colors text-center">
             <Header />
             <div>
                 <Overview />

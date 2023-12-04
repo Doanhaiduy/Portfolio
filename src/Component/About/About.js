@@ -40,7 +40,7 @@ function About(props) {
                             sequence={[" Doan Hai Duy", 4000, "  Doan Hai Duy", 4000, "   Doan Hai Duy", 4000]}
                             speed={50}
                             repeat={Infinity}
-                            className="uppercase font-bold text-7xl text-orange-500 my-1 "
+                            className="uppercase font-bold text-4xl md:text-7xl text-orange-500 my-1 "
                             wrapper="h2"
                         />
                     </motion.div>

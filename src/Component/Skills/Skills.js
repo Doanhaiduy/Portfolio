@@ -32,7 +32,7 @@ function Skills(props) {
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: true, amount: 0.7 }}
-                            className="xl:p-8  p-4 dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:scale-110 transition-transform"
+                            className="xl:p-8  p-4 dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:!scale-110 !transition-transform"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ function Skills(props) {
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: true, amount: 0.7 }}
-                            className="xl:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:scale-110 transition-transform"
+                            className="xl:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:!scale-110 !transition-transform"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ function Skills(props) {
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: true, amount: 0.7 }}
-                            className="xl:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:scale-110 transition-transform"
+                            className="xl:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:!scale-110 !transition-transform"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +111,7 @@ function Skills(props) {
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: true, amount: 0.7 }}
-                            className="xl:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:scale-110 transition-transform"
+                            className="xl:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:!scale-110 !transition-transform"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +133,7 @@ function Skills(props) {
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: true, amount: 0.7 }}
-                            className="xl:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:scale-110 transition-transform"
+                            className="xl:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:!scale-110 !transition-transform"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -155,7 +155,7 @@ function Skills(props) {
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: true, amount: 0.7 }}
-                            className="xl:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:scale-110 transition-transform"
+                            className="xl:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:!scale-110 !transition-transform"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -186,7 +186,7 @@ function Skills(props) {
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: true, amount: 0.7 }}
-                            className="xl:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:scale-110 transition-transform"
+                            className="xl:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:!scale-110 !transition-transform"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -224,7 +224,7 @@ function Skills(props) {
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: true, amount: 0.7 }}
-                            className="xl:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:scale-110 transition-transform"
+                            className="xl:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:!scale-110 !transition-transform"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -255,7 +255,7 @@ function Skills(props) {
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: true, amount: 0.7 }}
-                            className="xl:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:scale-110 transition-transform"
+                            className="xl:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:!scale-110 !transition-transform"
                         >
                             <svg
                                 height="100"
@@ -525,7 +525,7 @@ function Skills(props) {
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: true, amount: 0.7 }}
-                            className="xl:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:scale-110 transition-transform"
+                            className="xl:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:!scale-110 !transition-transform"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -579,7 +579,7 @@ function Skills(props) {
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: true, amount: 0.7 }}
-                            className="xl:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:scale-110 transition-transform"
+                            className="xl:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:!scale-110 !transition-transform"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -598,7 +598,7 @@ function Skills(props) {
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: true, amount: 0.7 }}
-                            className="xl:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:scale-110 transition-transform"
+                            className="xl:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:!scale-110 !transition-transform"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
