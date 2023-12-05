@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 function Skills(props) {
     return (
         <div
-            className="flex xl:px-[15%] md:px-[8%] px-[20px] items-center justify-center gap-[20px] gap-y-[40px] py-[80px] bg-white dark:bg-black transition-colors dark:text-white"
+            className="flex xl:px-[15%] md:px-[8%] px-[20px] items-center justify-center gap-[20px] gap-y-[40px] py-[80px]  transition-colors dark:text-white"
             id="skills"
         >
             <div className="-rotate-90 lg:mr-[80px] md:block hidden">

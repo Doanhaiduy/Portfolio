@@ -8,7 +8,7 @@ import { TypeAnimation } from "react-type-animation";
 function About(props) {
     return (
         <div
-            className="flex md:h-screen md:flex-row-reverse flex-col-reverse xl:px-[15%] md:px-[8%] px-[20px] items-center justify-center gap-[20px] gap-y-[40px] py-[80px] transition-colors bg-white dark:bg-black"
+            className="flex md:h-screen md:flex-row-reverse flex-col-reverse xl:px-[15%] md:px-[8%] px-[20px] items-center justify-center gap-[20px] gap-y-[40px] py-[80px] transition-colors "
             id="about-me"
         >
             <div className="text-left flex-1 xl:ml-[80px] md:ml-[40px]">

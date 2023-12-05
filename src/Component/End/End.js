@@ -42,7 +42,7 @@ function End(props) {
                         className="text-[22px]"
                     >
                         You're a flower on earth, let's make your life beautiful and meaningful{" "}
-                        <strong className="text-orange-500">(◕‿↼)</strong>
+                        <strong className="text-orange-500">(◕‿↼)</strong>.
                     </motion.p>
                 </div>
                 <CatTyping />

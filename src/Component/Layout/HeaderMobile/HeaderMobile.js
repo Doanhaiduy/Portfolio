@@ -38,7 +38,7 @@ function HeaderMobile() {
     return (
         <div
             ref={headerMobileRef}
-            className="md:hidden  p-4 px-8 rounded-[99px] fixed bottom-[30px] left-1/2 flex gap-5 translate-x-[-50%] bg-black/40 dark:bg-white/40 z-[100] text-[25px] text-white dark:text-gray-200 transition-colors"
+            className="md:hidden  sm:py-4 py-2 px-4 sm:px-8 rounded-[99px] fixed bottom-[30px] left-1/2 flex gap-5 translate-x-[-50%] bg-black/40 dark:bg-white/40 z-[100] text-[20px] sm:text-[25px] text-white dark:text-gray-200 transition-colors"
         >
             <a
                 href="#overview"

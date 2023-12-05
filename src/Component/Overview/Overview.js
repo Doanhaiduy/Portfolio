@@ -23,7 +23,7 @@ function Overview() {
     };
     return (
         <div
-            className={`flex md:flex-row flex-col-reverse items-center justify-center xl:px-[15%] md:px-[8%] px-[20px] gap-[20px] gap-y-10 bg-orange-50 dark:bg-[#212529] transition-colors  py-[40px] md:h-screen rounded-b-[50px] ${stickyClass}`}
+            className={` flex md:flex-row flex-col-reverse items-center justify-center xl:px-[15%] md:px-[8%] px-[20px] gap-[20px] gap-y-10  transition-colors  py-[40px] md:h-screen rounded-b-[50px] ${stickyClass}`}
             id="overview"
         >
             <div className="md:text-left text-center flex-1  xl:ml-[80px] ">
@@ -91,7 +91,7 @@ function Overview() {
                 >
                     <a
                         href="tel:0399998943"
-                        className="md:px-12  md:py-4 px-6 py-2 rounded-xl bg-orange-500 text-white"
+                        className="md:px-12  md:py-4 px-6 py-2 rounded-xl bg-orange-500 text-white hover:opacity-90"
                     >
                         Contact Me
                     </a>

@@ -42,7 +42,7 @@ function Header() {
         if (window !== undefined) {
             let windowHeight = window.scrollY;
             windowHeight > 200
-                ? setStickyClass("fixed top-0 left-0 z-50 bg-orange-50/50 md:py-6 dark:bg-[#212529]/50")
+                ? setStickyClass("fixed top-0 left-0 z-50 !bg-orange-50/50 md:py-6 dark:bg-[#212529]/30")
                 : setStickyClass("relative");
         }
     };
@@ -50,12 +50,12 @@ function Header() {
     return (
         <div
             ref={headerRef}
-            className={`flex px-[10%] items-center justify-between md:py-10 bg-orange-50 dark:bg-[#212529] dark:text-white md:w-full transition-all ${stickyClass}`}
+            className={`flex px-[10%] items-center justify-between md:py-10   dark:text-white md:w-full transition-all ${stickyClass}`}
         >
             <div>
                 <img src="" alt="" />
             </div>
-            <ul className="text-3xl md:flex gap-8 font-semibold hidden">
+            <ul className="lg:text-3xl text-2xl md:flex gap-8 font-semibold hidden">
                 <li
                     className={`cursor-pointer hover:text-orange-500 transition-colors ${
                         activeNav === "overview" ? "text-orange-500" : ""

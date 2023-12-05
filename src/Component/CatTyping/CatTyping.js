@@ -15,7 +15,7 @@ function CatTyping(props) {
             <div className="container">
                 <svg
                     id="bongo-cat"
-                    className="lg:w-[600px] lg:h-[600px] w-[300px] h-[300px]"
+                    className="lg:w-[600px] lg:h-[400px] w-[300px] h-[200px]"
                     xmlns="http://www.w3.org/2000/svg"
                     xmlnsXlink="http://www.w3.org/1999/xlink"
                     viewBox="0 0 787.3 433.8"
