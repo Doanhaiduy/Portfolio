@@ -22,6 +22,16 @@ const ListProject = [
         source: "https://github.com/Doanhaiduy/ASP.Net-MVC-project-63130260",
     },
     {
+        name: "Portfolio",
+        description:
+            "Portfolio is a project I built using ReactJs to collect information about myself, including background information, skills, projects,...",
+        technologies: "ReactJs, TailwindCss.",
+        time: " 1 Day.",
+        image: "https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2FJohn%20Weak%20N%C4%83m%2F021fb89f-5f52-4832-a023-d0be6cede6bf%2Fpr7.png021fb89f-5f52-4832-a023-d0be6cede6bf?alt=media&token=12c842ee-4ee3-44b0-b888-b57ce40faa99",
+        live: "https://www.doanhaiduy.website/",
+        source: "https://github.com/Doanhaiduy/Portfolio",
+    },
+    {
         name: "League Of Legends App",
         description:
             "League Of Legends App is a project about information about generals in the game, which I implemented in a presentation on web programming.",

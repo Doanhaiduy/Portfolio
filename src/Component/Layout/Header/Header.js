@@ -23,7 +23,7 @@ function Header() {
                     }
                 });
             },
-            { threshold: 0.5 } // Adjust the threshold as needed
+            { threshold: 0.2 } // Adjust the threshold as needed
         );
 
         // Observe each section
@@ -57,36 +57,36 @@ function Header() {
             </div>
             <ul className="lg:text-3xl text-2xl md:flex gap-8 font-semibold hidden">
                 <li
-                    className={`cursor-pointer hover:text-orange-500 transition-colors ${
-                        activeNav === "overview" ? "text-orange-500" : ""
+                    className={`cursor-pointer hover:text-orange-500 transition-colors relative nav-menu ${
+                        activeNav === "overview" ? "text-orange-500 active" : ""
                     }`}
                 >
                     <a href="#overview">OVERVIEW</a>
                 </li>
                 <li
-                    className={`cursor-pointer hover:text-orange-500 transition-colors ${
-                        activeNav === "about-me" ? "text-orange-500" : ""
+                    className={`cursor-pointer hover:text-orange-500 transition-colors relative nav-menu ${
+                        activeNav === "about-me" ? "text-orange-500 active" : ""
                     }`}
                 >
                     <a href="#about-me">ABOUT ME</a>
                 </li>
                 <li
-                    className={`cursor-pointer hover:text-orange-500 transition-colors ${
-                        activeNav === "skills" ? "text-orange-500" : ""
+                    className={`cursor-pointer hover:text-orange-500 transition-colors relative nav-menu ${
+                        activeNav === "skills" ? "text-orange-500 active" : ""
                     }`}
                 >
                     <a href="#skills">SKILLS</a>
                 </li>
                 <li
-                    className={`cursor-pointer hover:text-orange-500 transition-colors ${
-                        activeNav === "projects" ? "text-orange-500" : ""
+                    className={`cursor-pointer hover:text-orange-500 transition-colors relative nav-menu ${
+                        activeNav === "projects" ? "text-orange-500 active" : ""
                     }`}
                 >
                     <a href="#projects">PROJECTS</a>
                 </li>
                 <li
-                    className={`cursor-pointer hover:text-orange-500 transition-colors ${
-                        activeNav === "the-end" ? "text-orange-500" : ""
+                    className={`cursor-pointer hover:text-orange-500 transition-colors relative nav-menu ${
+                        activeNav === "the-end" ? "text-orange-500 active" : ""
                     }`}
                 >
                     <a href="#the-end">THE END</a>
