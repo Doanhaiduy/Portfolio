@@ -1,29 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { BiSolidQuoteAltLeft } from "react-icons/bi";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import CV from "../../DoanHaiDuy.pdf";
 function Overview() {
-    const [stickyClass, setStickyClass] = useState("relative");
-
-    useEffect(() => {
-        window.addEventListener("scroll", stickNavbar);
-
-        return () => {
-            window.removeEventListener("scroll", stickNavbar);
-        };
-    }, []);
-
-    const stickNavbar = () => {
-        if (window !== undefined) {
-            let windowHeight = window.scrollY;
-            windowHeight > 200 ? setStickyClass("mt-[116px]") : setStickyClass("mt-0");
-        }
-    };
     return (
         <div
-            className={` flex md:flex-row flex-col-reverse items-center justify-center xl:px-[15%] md:px-[8%] px-[20px] gap-[20px] gap-y-10  transition-colors  py-[40px] md:h-screen rounded-b-[50px] ${stickyClass}`}
+            className={` flex md:flex-row flex-col-reverse items-center justify-center xl:px-[15%] md:px-[8%] px-[20px] gap-[20px] gap-y-10  transition-colors  py-[40px] md:h-screen rounded-b-[50px]`}
             id="overview"
         >
             <div className="md:text-left text-center flex-1  xl:ml-[80px] ">
@@ -104,6 +88,41 @@ function Overview() {
                     >
                         Download my cv
                     </a>
+
+                    {/* <div
+                        href={CV}
+                        download="CV-DoanHaiDuy"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-orange-500 uppercase "
+                        onClick={() => setOption(true)}
+                    >
+                        <div
+                            className={`absolute bottom-[-60px]  flex-col items-start gap-1  ${
+                                option ? "flex" : "hidden"
+                            }`}
+                        >
+                            <a
+                                href={CV}
+                                download="CV-DoanHaiDuy"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-orange-500 uppercase "
+                            >
+                                English
+                            </a>
+                            <a
+                                href={CV}
+                                download="CV-DoanHaiDuy"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-orange-500 uppercase "
+                            >
+                                Vietnamese
+                            </a>
+                        </div>
+                        Download my cv
+                    </div> */}
                 </motion.div>
             </div>
             <motion.div
