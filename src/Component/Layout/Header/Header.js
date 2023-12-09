@@ -41,7 +41,7 @@ function Header() {
     const stickNavbar = () => {
         if (window !== undefined) {
             let windowHeight = window.scrollY;
-            windowHeight > 100 ? setStickyClass("!bg-orange-50/50 md:py-6 dark:bg-[#212529]/30") : setStickyClass("");
+            windowHeight > 80 ? setStickyClass("!bg-white md:py-5 dark:!bg-black") : setStickyClass("");
         }
     };
 

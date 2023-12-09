@@ -7,7 +7,7 @@ import CV from "../../DoanHaiDuy.pdf";
 function Overview() {
     return (
         <div
-            className={` flex md:flex-row flex-col-reverse items-center justify-center xl:px-[15%] md:px-[8%] px-[20px] gap-[20px] gap-y-10  transition-colors  py-[40px] md:h-screen rounded-b-[50px]`}
+            className={` flex md:flex-row flex-col-reverse items-center justify-center xl:px-[15%] md:px-[8%] md:pt-[120px] px-[20px] gap-[20px] gap-y-10  transition-colors  py-[40px] md:h-screen rounded-b-[50px]`}
             id="overview"
         >
             <div className="md:text-left text-center flex-1  xl:ml-[80px] ">
