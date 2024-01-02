@@ -12,6 +12,7 @@ const ListProject = [
         live: "https://snapshare.site/",
         source: "https://github.com/Doanhaiduy/snap-share-app",
     },
+
     {
         name: "Sinp Shop",
         description: "Sinp shop is an e-commerce project I did for my final thesis in web application development.",
@@ -32,6 +33,15 @@ const ListProject = [
         source: "https://github.com/Doanhaiduy/Portfolio",
     },
     {
+        name: "Todo App",
+        description: "Todo App is the first project I made after learning React Native.",
+        technologies: "React Native, Firebase.",
+        time: " 1 day.",
+        image: "https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2F%C4%90o%C3%A0n%20H%E1%BA%A3i%20Duy%2Fb506d3f3-baa2-4b45-93af-1e5baeb88747%2Ftodo.pngb506d3f3-baa2-4b45-93af-1e5baeb88747?alt=media&token=010ce5b5-0c46-4edb-a8b8-b0e3d123b940",
+        live: "https://mega.nz/file/LJlQELpQ#myK5Fnr9vxRAaNBlQ229JASC0mQIbQLzvFkT2WH8Zdc",
+        source: "https://github.com/Doanhaiduy/react-native-todo-app",
+    },
+    {
         name: "League Of Legends App",
         description:
             "League Of Legends App is a project about information about generals in the game, which I implemented in a presentation on web programming.",
@@ -43,7 +53,7 @@ const ListProject = [
     },
     {
         name: "Movie App",
-        description: "Movie App is the first project I made after. learning ReactJs and TailwindCss.",
+        description: "Movie App is the first project I made after learning ReactJs and TailwindCss.",
         technologies: "ReactJs, TailwindCss, API (TMDB).",
         time: " 1 Week.",
         image: "https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2FJohn%20Weak%20N%C4%83m%2F4169da53-82ce-4c20-975f-9e6ec9d8e6ee%2Fpr5.png4169da53-82ce-4c20-975f-9e6ec9d8e6ee?alt=media&token=c2ace9eb-71c0-4d5b-94be-9194eba387d4",
