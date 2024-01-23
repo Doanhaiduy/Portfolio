@@ -11,6 +11,7 @@ const ListProject = [
         image: "https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2F%C4%90o%C3%A0n%20H%E1%BA%A3i%20Duy%2Fb9bb83a6-48c1-4a81-b661-f03aa4babd66%2Fpr1.pngb9bb83a6-48c1-4a81-b661-f03aa4babd66?alt=media&token=a9d41157-7bfc-48e1-af97-9cd288cfc534",
         live: "https://snapshare.site/",
         source: "https://github.com/Doanhaiduy/snap-share-app",
+        active: true,
     },
 
     {
@@ -21,6 +22,7 @@ const ListProject = [
         image: "https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2FJohn%20Weak%20N%C4%83m%2F4169da53-82ce-4c20-975f-9e6ec9d8e6ee%2Fpr2.png4169da53-82ce-4c20-975f-9e6ec9d8e6ee?alt=media&token=ff3fe59b-b0f2-4725-8c86-e26e038ea414",
         live: "https://project-63130260.site/",
         source: "https://github.com/Doanhaiduy/ASP.Net-MVC-project-63130260",
+        active: false,
     },
     {
         name: "Portfolio",
@@ -31,6 +33,7 @@ const ListProject = [
         image: "https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2FJohn%20Weak%20N%C4%83m%2F021fb89f-5f52-4832-a023-d0be6cede6bf%2Fpr7.png021fb89f-5f52-4832-a023-d0be6cede6bf?alt=media&token=12c842ee-4ee3-44b0-b888-b57ce40faa99",
         live: "https://www.doanhaiduy.website/",
         source: "https://github.com/Doanhaiduy/Portfolio",
+        active: true,
     },
     {
         name: "Todo App",
@@ -40,6 +43,7 @@ const ListProject = [
         image: "https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2F%C4%90o%C3%A0n%20H%E1%BA%A3i%20Duy%2Fb506d3f3-baa2-4b45-93af-1e5baeb88747%2Ftodo.pngb506d3f3-baa2-4b45-93af-1e5baeb88747?alt=media&token=010ce5b5-0c46-4edb-a8b8-b0e3d123b940",
         live: "https://mega.nz/file/LJlQELpQ#myK5Fnr9vxRAaNBlQ229JASC0mQIbQLzvFkT2WH8Zdc",
         source: "https://github.com/Doanhaiduy/react-native-todo-app",
+        active: true,
     },
     {
         name: "League Of Legends App",
@@ -50,6 +54,7 @@ const ListProject = [
         image: "https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2FJohn%20Weak%20N%C4%83m%2F4169da53-82ce-4c20-975f-9e6ec9d8e6ee%2Fpr3.png4169da53-82ce-4c20-975f-9e6ec9d8e6ee?alt=media&token=1ae47a82-367c-44e3-bd46-00132e4918fa",
         live: "https://league-of-legends-ntu.vercel.app/",
         source: "https://github.com/Doanhaiduy/league-of-legends-app",
+        active: true,
     },
     {
         name: "Movie App",
@@ -59,6 +64,7 @@ const ListProject = [
         image: "https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2FJohn%20Weak%20N%C4%83m%2F4169da53-82ce-4c20-975f-9e6ec9d8e6ee%2Fpr5.png4169da53-82ce-4c20-975f-9e6ec9d8e6ee?alt=media&token=c2ace9eb-71c0-4d5b-94be-9194eba387d4",
         live: "https://the-movie-ntu.vercel.app/",
         source: "https://github.com/Doanhaiduy/movie-app",
+        active: true,
     },
     {
         name: "Anker Shop",
@@ -69,6 +75,7 @@ const ListProject = [
         image: "https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2FJohn%20Weak%20N%C4%83m%2F4169da53-82ce-4c20-975f-9e6ec9d8e6ee%2Fpr4.png4169da53-82ce-4c20-975f-9e6ec9d8e6ee?alt=media&token=0e66aba0-8192-4699-ac36-5c47e29e4322",
         live: "http://doanhaiduy-001-site1.itempurl.com/",
         source: "https://github.com/Doanhaiduy/AnkerShop",
+        active: false,
     },
     {
         name: "Form Validation",
@@ -78,6 +85,7 @@ const ListProject = [
         image: "https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2FJohn%20Weak%20N%C4%83m%2F4169da53-82ce-4c20-975f-9e6ec9d8e6ee%2Fpr6.png4169da53-82ce-4c20-975f-9e6ec9d8e6ee?alt=media&token=d00d1898-efe6-481f-832c-da4f88aa9a73",
         live: "https://doanhaiduy.github.io/Form-validation/",
         source: "https://github.com/Doanhaiduy/Form-validation",
+        active: true,
     },
 ];
 function Projects() {
@@ -114,6 +122,12 @@ function Projects() {
                             />
                             <h3 className="text-[24px] pt-4">{item.name}</h3>
                             <div className="absolute group-hover:opacity-100 opacity-0 invisible  group-hover:visible top-0 transition-all p-4 text-[20px] bg-black/75 w-full h-full left-0 rounded-[12px] text-left text-white ">
+                                {item.active === false && (
+                                    <p className="bg-red-600 px-2 py-1 text-white inline-block rounded-lg absolute top-2 left-2 text-[14px] font-bold">
+                                        (Hosting Expiry)
+                                    </p>
+                                )}
+
                                 <h3 className="text-center text-[24px] font-semibold mb-4">{item.name}</h3>
                                 <div className="flex flex-col justify-between h-[80%] ">
                                     <div className="">
