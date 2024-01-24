@@ -20,9 +20,10 @@ const ListProject = [
         technologies: "ASP.Net MVC, SQL, TailwindCss, Firebase.",
         time: " 1 Week.",
         image: "https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2FJohn%20Weak%20N%C4%83m%2F4169da53-82ce-4c20-975f-9e6ec9d8e6ee%2Fpr2.png4169da53-82ce-4c20-975f-9e6ec9d8e6ee?alt=media&token=ff3fe59b-b0f2-4725-8c86-e26e038ea414",
-        live: "https://project-63130260.site/",
+        // live: "https://project-63130260.site/",
+        live: "http://doanhaiduy03-001-site1.ftempurl.com/",
         source: "https://github.com/Doanhaiduy/ASP.Net-MVC-project-63130260",
-        active: false,
+        active: true,
     },
     {
         name: "Portfolio",
