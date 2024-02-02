@@ -106,7 +106,7 @@ function Projects() {
                         Here are some of the projects I've done. I hope it will meet your requirements.
                     </p>
                 </div>
-                <div className='grid 2xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-5'>
+                <div className='grid 2xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5'>
                     {ListProject.map((item, index) => (
                         <motion.div
                             key={index}
