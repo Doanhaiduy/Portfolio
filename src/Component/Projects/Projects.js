@@ -20,10 +20,13 @@ const ListProject = [
         technologies: 'ASP.Net MVC, SQL, TailwindCss, Firebase.',
         time: ' 1 Week.',
         image: 'https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2FJohn%20Weak%20N%C4%83m%2F4169da53-82ce-4c20-975f-9e6ec9d8e6ee%2Fpr2.png4169da53-82ce-4c20-975f-9e6ec9d8e6ee?alt=media&token=ff3fe59b-b0f2-4725-8c86-e26e038ea414',
-        // live: "https://project-63130260.site/",
-        live: 'http://doanhaiduy03-001-site1.ftempurl.com/',
+        live: 'http://duydeployment-001-site1.btempurl.com/',
         source: 'https://github.com/Doanhaiduy/ASP.Net-MVC-project-63130260',
         active: true,
+        passwordProtection: {
+            username: '11175587',
+            password: '60-dayfreetrial',
+        },
     },
     {
         name: 'Portfolio',
@@ -36,16 +39,16 @@ const ListProject = [
         source: 'https://github.com/Doanhaiduy/Portfolio',
         active: true,
     },
-    {
-        name: 'Todo App',
-        description: 'Todo App is the first project I made after learning React Native.',
-        technologies: 'React Native, Firebase.',
-        time: ' 1 day.',
-        image: 'https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2F%C4%90o%C3%A0n%20H%E1%BA%A3i%20Duy%2Fb506d3f3-baa2-4b45-93af-1e5baeb88747%2Ftodo.pngb506d3f3-baa2-4b45-93af-1e5baeb88747?alt=media&token=010ce5b5-0c46-4edb-a8b8-b0e3d123b940',
-        live: 'https://mega.nz/file/LJlQELpQ#myK5Fnr9vxRAaNBlQ229JASC0mQIbQLzvFkT2WH8Zdc',
-        source: 'https://github.com/Doanhaiduy/react-native-todo-app',
-        active: true,
-    },
+    // {
+    //     name: 'Todo App',
+    //     description: 'Todo App is the first project I made after learning React Native.',
+    //     technologies: 'React Native, Firebase.',
+    //     time: ' 1 day.',
+    //     image: 'https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2F%C4%90o%C3%A0n%20H%E1%BA%A3i%20Duy%2Fb506d3f3-baa2-4b45-93af-1e5baeb88747%2Ftodo.pngb506d3f3-baa2-4b45-93af-1e5baeb88747?alt=media&token=010ce5b5-0c46-4edb-a8b8-b0e3d123b940',
+    //     live: 'https://mega.nz/file/LJlQELpQ#myK5Fnr9vxRAaNBlQ229JASC0mQIbQLzvFkT2WH8Zdc',
+    //     source: 'https://github.com/Doanhaiduy/react-native-todo-app',
+    //     active: true,
+    // },
     {
         name: 'League Of Legends App',
         description:
@@ -122,7 +125,7 @@ function Projects() {
                                 alt={item.name}
                             />
                             <h3 className='text-[24px] pt-4'>{item.name}</h3>
-                            <div className='absolute group-hover:opacity-100 opacity-0 invisible  group-hover:visible top-0 transition-all p-4 text-[20px] bg-black/75 w-full h-full left-0 rounded-[12px] text-left text-white '>
+                            <div className='absolute group-hover:opacity-100 overflow-y-scroll opacity-0 invisible  group-hover:visible top-0 transition-all p-4 text-[20px] bg-black/75 w-full h-full left-0 rounded-[12px] text-left text-white '>
                                 {item.active === false && (
                                     <p className='bg-red-600 px-2 py-1 text-white inline-block rounded-lg absolute top-2 left-2 text-[14px] font-bold'>
                                         (Hosting Expiry)
@@ -130,7 +133,7 @@ function Projects() {
                                 )}
 
                                 <h3 className='text-center text-[24px] font-semibold mb-4'>{item.name}</h3>
-                                <div className='flex flex-col justify-between h-[80%] '>
+                                <div className='flex flex-col justify-between h-[80%]'>
                                     <div className=''>
                                         <p>
                                             <strong>Description: </strong>
@@ -139,9 +142,20 @@ function Projects() {
                                         <p>
                                             <strong>Technologies Used:</strong> {item.technologies}
                                         </p>
-                                        {/* <p>
-                                            <strong>Execution time:</strong> {item.time}
-                                        </p> */}
+                                        {item.passwordProtection && (
+                                            <>
+                                                <p className='text-red-500 bg-white'>
+                                                    For financial reasons, the hosting used is a free package, so the
+                                                    hosting is password protected when browsing on the web browser,
+                                                    enter username and password below.
+                                                </p>
+                                                <p className=''>
+                                                    <strong>Username:</strong> {item.passwordProtection.username}
+                                                    <br />
+                                                    <strong> Password:</strong> {item.passwordProtection.password}
+                                                </p>
+                                            </>
+                                        )}
                                     </div>
                                     <div className='flex gap-3 items-center justify-center mt-4'>
                                         <a
