@@ -33,22 +33,22 @@ const ListProject = [
         description:
             'Portfolio is a project I built using ReactJs to collect information about myself, including background information, skills, projects,...',
         technologies: 'ReactJs, TailwindCss.',
-        time: ' 1 Day.',
+        time: ' 2 Day.',
         image: 'https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2FJohn%20Weak%20N%C4%83m%2F021fb89f-5f52-4832-a023-d0be6cede6bf%2Fpr7.png021fb89f-5f52-4832-a023-d0be6cede6bf?alt=media&token=12c842ee-4ee3-44b0-b888-b57ce40faa99',
         live: 'https://www.doanhaiduy.website/',
         source: 'https://github.com/Doanhaiduy/Portfolio',
         active: true,
     },
-    // {
-    //     name: 'Todo App',
-    //     description: 'Todo App is the first project I made after learning React Native.',
-    //     technologies: 'React Native, Firebase.',
-    //     time: ' 1 day.',
-    //     image: 'https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2F%C4%90o%C3%A0n%20H%E1%BA%A3i%20Duy%2Fb506d3f3-baa2-4b45-93af-1e5baeb88747%2Ftodo.pngb506d3f3-baa2-4b45-93af-1e5baeb88747?alt=media&token=010ce5b5-0c46-4edb-a8b8-b0e3d123b940',
-    //     live: 'https://mega.nz/file/LJlQELpQ#myK5Fnr9vxRAaNBlQ229JASC0mQIbQLzvFkT2WH8Zdc',
-    //     source: 'https://github.com/Doanhaiduy/react-native-todo-app',
-    //     active: true,
-    // },
+    {
+        name: 'Quick Attend',
+        description: 'Quick Attend is a React Native application that supports event attendance using QR codes.',
+        technologies: 'React Native - Typescript, NodeJs (ExpressJs), MongoDb, Firebase, NativeWind, Axios, Jwt.',
+        time: ' 1 week.',
+        image: 'https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2F%C4%90o%C3%A0n%20H%E1%BA%A3i%20Duy%2F0a4555d0-6e0d-4de5-9fcb-ce435f0867c6%2Fz5472447439766_288eb5c4146f784fb112958ecfd106da.jpg0a4555d0-6e0d-4de5-9fcb-ce435f0867c6?alt=media&token=2b55bc31-8dfd-4f44-aa3b-0fae5b573659',
+        live: 'https://drive.google.com/file/d/1U4SHC_7rFxFSn73Uz6LJxnGxniVzYpr3/view',
+        source: 'https://github.com/Doanhaiduy/ThiCuoiKy_mobile_63130260',
+        active: true,
+    },
     {
         name: 'League Of Legends App',
         description:
