@@ -75,7 +75,7 @@ export default function PreLoader() {
             initial={{ opacity: 1 }}
             animate={screenControls}
         >
-            <div className='texts-container flex items-center h-[60px]  text-3xl font-bold overflow-hidden dark:text-white text-black'>
+            <div className='texts-container flex items-center h-[60px]  sm:text-2xl xl:text-3xl text-lg font-bold overflow-hidden dark:text-white text-black'>
                 <motion.span animate={textControls[0]} initial={{ opacity: 0, y: 70 }}>
                     Welcome To
                 </motion.span>
