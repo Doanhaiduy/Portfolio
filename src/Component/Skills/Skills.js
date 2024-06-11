@@ -27,7 +27,9 @@ function Skills(props) {
                 </motion.div>
                 <div className='flex items-center gap-5 justify-center'>
                     <div className='grid 2xl:grid-cols-5 lg:grid-cols-4 grid-cols-3 gap-8 uppercase'>
-                        <motion.div
+                        <motion.a
+                            href='https://developer.mozilla.org/en-US/docs/Web/HTML'
+                            target='_blank'
                             variants={fadeIn('up', 0.3)}
                             initial='hidden'
                             whileInView={'show'}
@@ -53,8 +55,10 @@ function Skills(props) {
                                 ></path>
                             </svg>
                             <span className='text-[22px] dark:text-gray-600 font-medium'>HTML</span>
-                        </motion.div>
-                        <motion.div
+                        </motion.a>
+                        <motion.a
+                            href='https://developer.mozilla.org/en-US/docs/Web/CSS'
+                            target='_blank'
                             variants={fadeIn('up', 0.3)}
                             initial='hidden'
                             whileInView={'show'}
@@ -80,8 +84,10 @@ function Skills(props) {
                                 ></path>
                             </svg>
                             <span className='text-[22px] dark:text-gray-600 font-medium'>CSS</span>
-                        </motion.div>
-                        <motion.div
+                        </motion.a>
+                        <motion.a
+                            href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'
+                            target='_blank'
                             variants={fadeIn('up', 0.3)}
                             initial='hidden'
                             whileInView={'show'}
@@ -101,8 +107,10 @@ function Skills(props) {
                                 <path d='M67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371 7.905 0 12.89-3.092 12.89-15.12v-81.798h24.057v82.138c0 24.917-14.606 36.259-35.916 36.259-19.245 0-30.416-9.967-36.087-21.996M152.381 211.354l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607 9.969 0 16.325-4.984 16.325-11.858 0-8.248-6.53-11.17-17.528-15.98l-6.013-2.58c-17.357-7.387-28.87-16.667-28.87-36.257 0-18.044 13.747-31.792 35.228-31.792 15.294 0 26.292 5.328 34.196 19.247L210.29 147.43c-4.125-7.389-8.591-10.31-15.465-10.31-7.046 0-11.514 4.468-11.514 10.31 0 7.217 4.468 10.14 14.778 14.608l6.014 2.577c20.45 8.765 31.963 17.7 31.963 37.804 0 21.654-17.012 33.51-39.867 33.51-22.339 0-36.774-10.654-43.819-24.574'></path>
                             </svg>
                             <span className='text-[22px] dark:text-gray-600 font-medium'>Javascript</span>
-                        </motion.div>
-                        <motion.div
+                        </motion.a>
+                        <motion.a
+                            href='https://www.typescriptlang.org/'
+                            target='_blank'
                             variants={fadeIn('up', 0.3)}
                             initial='hidden'
                             whileInView={'show'}
@@ -122,9 +130,11 @@ function Skills(props) {
                                 ></path>
                             </svg>
                             <span className='text-[22px] dark:text-gray-600 font-medium'>TypeScript</span>
-                        </motion.div>
+                        </motion.a>
 
-                        <motion.div
+                        <motion.a
+                            href='https://tailwindcss.com/'
+                            target='_blank'
                             variants={fadeIn('up', 0.3)}
                             initial='hidden'
                             whileInView={'show'}
@@ -144,8 +154,10 @@ function Skills(props) {
                                 ></path>
                             </svg>
                             <span className='text-[22px] dark:text-gray-600 font-medium'>Tailwind Css</span>
-                        </motion.div>
-                        <motion.div
+                        </motion.a>
+                        <motion.a
+                            href='https://sass-lang.com/'
+                            target='_blank'
                             variants={fadeIn('up', 0.3)}
                             initial='hidden'
                             whileInView={'show'}
@@ -165,8 +177,10 @@ function Skills(props) {
                                 ></path>
                             </svg>
                             <span className='text-[22px] dark:text-gray-600 font-medium'>SASS</span>
-                        </motion.div>
-                        <motion.div
+                        </motion.a>
+                        <motion.a
+                            href='https://react.dev/'
+                            target='_blank'
                             variants={fadeIn('up', 0.3)}
                             initial='hidden'
                             whileInView={'show'}
@@ -195,35 +209,16 @@ function Skills(props) {
                                 <circle cx='24' cy='24' r='4' fill='#80deea'></circle>
                             </svg>
                             <span className='text-[22px] dark:text-gray-600 font-medium'>React Js</span>
-                        </motion.div>
-                        <motion.div
+                        </motion.a>
+                        <motion.a
+                            href='https://reactnative.dev/'
+                            target='_blank'
                             variants={fadeIn('up', 0.3)}
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{ once: true, amount: 0.7 }}
                             className='lg:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:!scale-110 !transition-transform'
                         >
-                            {/* <svg
-                                xmlns='http://www.w3.org/2000/svg'
-                                x='0px'
-                                y='0px'
-                                className='md:w-[80px] md:h-[80px] w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] '
-                                viewBox='0 0 48 48'
-                            >
-                                <path
-                                    fill='#80deea'
-                                    d='M24,34C11.1,34,1,29.6,1,24c0-5.6,10.1-10,23-10c12.9,0,23,4.4,23,10C47,29.6,36.9,34,24,34z M24,16	c-12.6,0-21,4.1-21,8c0,3.9,8.4,8,21,8s21-4.1,21-8C45,20.1,36.6,16,24,16z'
-                                ></path>
-                                <path
-                                    fill='#80deea'
-                                    d='M15.1,44.6c-1,0-1.8-0.2-2.6-0.7C7.6,41.1,8.9,30.2,15.3,19l0,0c3-5.2,6.7-9.6,10.3-12.4c3.9-3,7.4-3.9,9.8-2.5	c2.5,1.4,3.4,4.9,2.8,9.8c-0.6,4.6-2.6,10-5.6,15.2c-3,5.2-6.7,9.6-10.3,12.4C19.7,43.5,17.2,44.6,15.1,44.6z M32.9,5.4	c-1.6,0-3.7,0.9-6,2.7c-3.4,2.7-6.9,6.9-9.8,11.9l0,0c-6.3,10.9-6.9,20.3-3.6,22.2c1.7,1,4.5,0.1,7.6-2.3c3.4-2.7,6.9-6.9,9.8-11.9	c2.9-5,4.8-10.1,5.4-14.4c0.5-4-0.1-6.8-1.8-7.8C34,5.6,33.5,5.4,32.9,5.4z'
-                                ></path>
-                                <path
-                                    fill='#80deea'
-                                    d='M33,44.6c-5,0-12.2-6.1-17.6-15.6C8.9,17.8,7.6,6.9,12.5,4.1l0,0C17.4,1.3,26.2,7.8,32.7,19	c3,5.2,5,10.6,5.6,15.2c0.7,4.9-0.3,8.3-2.8,9.8C34.7,44.4,33.9,44.6,33,44.6z M13.5,5.8c-3.3,1.9-2.7,11.3,3.6,22.2	c6.3,10.9,14.1,16.1,17.4,14.2c1.7-1,2.3-3.8,1.8-7.8c-0.6-4.3-2.5-9.4-5.4-14.4C24.6,9.1,16.8,3.9,13.5,5.8L13.5,5.8z'
-                                ></path>
-                                <circle cx='24' cy='24' r='4' fill='#80deea'></circle>
-                            </svg> */}
                             <svg
                                 xmlns='http://www.w3.org/2000/svg'
                                 enable-background='new 0 0 32 32'
@@ -245,8 +240,10 @@ function Skills(props) {
                                 ></path>
                             </svg>
                             <span className='text-[22px] dark:text-gray-600 font-medium'>React Native</span>
-                        </motion.div>
-                        <motion.div
+                        </motion.a>
+                        <motion.a
+                            href='https://nodejs.org/en'
+                            target='_blank'
                             variants={fadeIn('up', 0.3)}
                             initial='hidden'
                             whileInView={'show'}
@@ -282,8 +279,38 @@ function Skills(props) {
                                 ></path>
                             </svg>
                             <span className='text-[22px] dark:text-gray-600 font-medium'>Node Js (Restful API)</span>
-                        </motion.div>
-                        <motion.div
+                        </motion.a>
+
+                        <motion.a
+                            href='https://expressjs.com/'
+                            target='_blank'
+                            variants={fadeIn('up', 0.3)}
+                            initial='hidden'
+                            whileInView={'show'}
+                            viewport={{ once: true, amount: 0.7 }}
+                            className='lg:p-8  p-4  dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:!scale-110 !transition-transform'
+                        >
+                            <svg
+                                xmlns='http://www.w3.org/2000/svg'
+                                x='0px'
+                                y='0px'
+                                className='md:w-[80px] md:h-[80px] w-[60px] h-[60px] lg:w-[70px] lg:h-[70px] '
+                                viewBox='0 0 48 48'
+                            >
+                                <path
+                                    fill='#212121'
+                                    d='M23.697,37.56h1.18c0.84,0,1.631-0.392,2.139-1.061l7.485-9.847l7.485,9.847	c0.508,0.668,1.299,1.061,2.139,1.061h1.18L35.756,25l9.121-12h-1.18c-0.84,0-1.631,0.392-2.139,1.061L34.5,23.347l-7.059-9.287	C26.933,13.392,26.142,13,25.302,13h-1.18l9.121,12L23.697,37.56z'
+                                ></path>
+                                <path
+                                    fill='#212121'
+                                    d='M24,26v-3c0-6.675-5.945-11.961-12.829-10.852C5.812,13.011,2,17.857,2,23.284L2,24v2v0.142	c0,6.553,4.777,11.786,10.868,11.858c5.092,0.06,9.389-3.344,10.707-7.999h-1.028c-0.62,0-1.182,0.355-1.451,0.913	c-1.739,3.595-5.789,5.862-10.228,4.842C6.776,34.815,4,30.981,4,26.783V26H24z M4,23.71c0-4.708,2.804-8.557,6.924-9.478	C16.798,12.92,22,17.352,22,23v1H4V23.71z'
+                                ></path>
+                            </svg>
+                            <span className='text-[22px] dark:text-gray-600 font-medium'>Express Js</span>
+                        </motion.a>
+                        <motion.a
+                            href='https://www.mongodb.com/'
+                            target='_blank'
                             variants={fadeIn('up', 0.3)}
                             initial='hidden'
                             whileInView={'show'}
@@ -390,8 +417,10 @@ function Skills(props) {
                             </svg>
 
                             <span className='text-[22px] dark:text-gray-600 font-medium'>MongoDB</span>
-                        </motion.div>
-                        <motion.div
+                        </motion.a>
+                        <motion.a
+                            href='https://firebase.google.com/'
+                            target='_blank'
                             variants={fadeIn('up', 0.3)}
                             initial='hidden'
                             whileInView={'show'}
@@ -420,8 +449,10 @@ function Skills(props) {
                                 ></path>
                             </svg>
                             <span className='text-[22px] dark:text-gray-600 font-medium'>Firebase</span>
-                        </motion.div>
-                        <motion.div
+                        </motion.a>
+                        <motion.a
+                            href='https://support.microsoft.com/vi-vn/topic/31846479-c656-f2a4-bc24-c9803a97e62c'
+                            target='_blank'
                             variants={fadeIn('up', 0.3)}
                             initial='hidden'
                             whileInView={'show'}
@@ -689,8 +720,10 @@ function Skills(props) {
                                 </g>
                             </svg>
                             <span className='text-[22px] dark:text-gray-600 font-medium'>ASP.Net MVC</span>
-                        </motion.div>
-                        <motion.div
+                        </motion.a>
+                        <motion.a
+                            href='https://www.w3schools.com/sql/sql_intro.asp'
+                            target='_blank'
                             variants={fadeIn('up', 0.3)}
                             initial='hidden'
                             whileInView={'show'}
@@ -754,8 +787,10 @@ function Skills(props) {
                             </svg>
 
                             <span className='text-[22px] dark:text-gray-600 font-medium'>SQL</span>
-                        </motion.div>
-                        <motion.div
+                        </motion.a>
+                        <motion.a
+                            href='https://www.git-scm.com/'
+                            target='_blank'
                             variants={fadeIn('up', 0.3)}
                             initial='hidden'
                             whileInView={'show'}
@@ -772,8 +807,10 @@ function Skills(props) {
                                 <path d='M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z'></path>
                             </svg>
                             <span className='text-[22px] dark:text-gray-600 font-medium'>Git</span>
-                        </motion.div>
-                        <motion.div
+                        </motion.a>
+                        <motion.a
+                            href='https://helpx.adobe.com/vn_vi/photoshop/using/whats-new-cs6.html'
+                            target='_blank'
                             variants={fadeIn('up', 0.3)}
                             initial='hidden'
                             whileInView={'show'}
@@ -801,7 +838,7 @@ function Skills(props) {
                                 ></path>
                             </svg>
                             <span className='text-[22px] dark:text-gray-600 font-medium'>Cs6</span>
-                        </motion.div>
+                        </motion.a>
                     </div>
                 </div>
             </div>

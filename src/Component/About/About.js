@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useContext} from 'react';
 import { BiSolidQuoteAltLeft } from 'react-icons/bi';
 import { AiFillFacebook, AiFillGithub, AiFillMail, AiFillMobile } from 'react-icons/ai';
 import { fadeIn } from '../../variants';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
+import { ProfileContext } from '../../context/ProfileContext';
 
-function About(props) {
+function About() {
+    const { profile, loading } = useContext(ProfileContext);
+
+    if (loading) return null;
+
     return (
         <div
             className='flex md:h-screen md:flex-row-reverse flex-col-reverse xl:px-[15%] md:px-[8%] px-[20px] bg-white dark:bg-black items-center justify-center gap-[20px] gap-y-[40px] py-[80px] transition-colors '
@@ -60,7 +65,7 @@ function About(props) {
                         initial='hidden'
                         whileInView={'show'}
                         viewport={{ once: true, amount: 0.7 }}
-                        href='mailto:haiduytbt2k3@gmail.com'
+                        href={`mailto:${profile?.email || 'haiduytbt2k3@gmail.com'}`}
                         className='flex gap-2 items-center'
                     >
                         <div className='p-3 text-[20px] shadow-xl rounded-[8px]  h-full  uppercase'>
@@ -68,7 +73,9 @@ function About(props) {
                         </div>
                         <div className=''>
                             <h3 className='font-semibold my-[-2px] text-orange-600 dark:text-white'>Email:</h3>
-                            <p className='text-gray-500 dark:text-white'>haiduytbt2k3@gmail.com</p>
+                            <p className='text-gray-500 dark:text-white'>
+                                {profile?.email || 'haiduytbt2k3@gmail.com'}
+                            </p>
                         </div>
                     </motion.a>
                     <motion.a
@@ -76,7 +83,7 @@ function About(props) {
                         initial='hidden'
                         whileInView={'show'}
                         viewport={{ once: true, amount: 0.7 }}
-                        href='tel:0399998943'
+                        href={`tel:${profile?.phoneNumber || '(+84) 399 998 943'}`}
                         className='flex gap-2 items-center'
                     >
                         <div className='p-3 text-[20px] shadow-xl rounded-[8px]  h-full  uppercase'>
@@ -84,7 +91,9 @@ function About(props) {
                         </div>
                         <div className=''>
                             <h3 className='font-semibold my-[-2px] text-orange-600 dark:text-white'>Phone number:</h3>
-                            <p className='text-gray-500 dark:text-white'>(+84) 399 998 943</p>
+                            <p className='text-gray-500 dark:text-white'>
+                                {profile?.phoneNumber || '(+84) 399 998 943'}
+                            </p>
                         </div>
                     </motion.a>
                     <motion.a
@@ -92,7 +101,7 @@ function About(props) {
                         initial='hidden'
                         whileInView={'show'}
                         viewport={{ once: true, amount: 0.7 }}
-                        href='https://github.com/Doanhaiduy/'
+                        href={`https://${profile?.githubUrl || 'github.com/Doanhaiduy'}`}
                         target='_blank'
                         rel='noreferrer'
                         className='flex gap-2 items-center'
@@ -102,7 +111,9 @@ function About(props) {
                         </div>
                         <div className=''>
                             <h3 className='font-semibold my-[-2px] text-orange-600 dark:text-white'>Github:</h3>
-                            <p className='text-gray-500 dark:text-white'>/Doanhaiduy</p>
+                            <p className='text-gray-500 dark:text-white'>
+                                /{profile?.githubUrl?.split('/')[1] || 'Doanhaiduy'}
+                            </p>
                         </div>
                     </motion.a>
                     <motion.a
@@ -110,7 +121,7 @@ function About(props) {
                         initial='hidden'
                         whileInView={'show'}
                         viewport={{ once: true, amount: 0.7 }}
-                        href='https://www.facebook.com/DoanHaiDuy.Profile/'
+                        href={`https://${profile?.facebookUrl || 'facebook.com/Doanhaiduy.Profile'}`}
                         target='_blank'
                         className='flex gap-2 items-center'
                         rel='noreferrer'
@@ -120,7 +131,9 @@ function About(props) {
                         </div>
                         <div className=''>
                             <h3 className='font-semibold my-[-2px] text-orange-600 dark:text-white'>Facebook:</h3>
-                            <p className='text-gray-500 dark:text-white'>/DoanHaiDuy.Profile</p>
+                            <p className='text-gray-500 dark:text-white'>
+                                /{profile?.facebookUrl?.split('/')[1] || 'Doanhaiduy.Profile'}
+                            </p>
                         </div>
                     </motion.a>
                 </div>
@@ -133,9 +146,9 @@ function About(props) {
                 className='md:w-2/5 flex items-center justify-center'
             >
                 <img
-                    src={require('../../assets/images/aboutImage2.jpg')}
+                    src={profile?.aboutImage || require('../../assets/images/aboutImage2.jpg')}
                     alt=''
-                    className='h-[400px] rounded-full object-cover w-[400px]'
+                    className='h-[400px] rounded-full object-cover w-[400px] bg-[#565f7f]'
                 />
             </motion.div>
         </div>

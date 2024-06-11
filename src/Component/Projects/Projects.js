@@ -1,98 +1,40 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { fadeIn } from '../../variants';
 import { motion } from 'framer-motion';
+import projectApis from '../../apis/projectApis';
+import { GrFormView } from 'react-icons/gr';
 
-const ListProject = [
-    {
-        name: 'SnapShare App',
-        description: 'SnapShare is a social networking project that I did during my second year of college.',
-        technologies: 'ReactJs, TailwindCss, Firebase.',
-        time: ' 2 Months.',
-        image: 'https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2F%C4%90o%C3%A0n%20H%E1%BA%A3i%20Duy%2Fb9bb83a6-48c1-4a81-b661-f03aa4babd66%2Fpr1.pngb9bb83a6-48c1-4a81-b661-f03aa4babd66?alt=media&token=a9d41157-7bfc-48e1-af97-9cd288cfc534',
-        live: 'https://snapshare.site/',
-        source: 'https://github.com/Doanhaiduy/snap-share-app',
-        active: true,
-    },
-
-    {
-        name: 'Sinp Shop',
-        description: 'Sinp shop is an e-commerce project I did for my final thesis in web application development.',
-        technologies: 'ASP.Net MVC, SQL, TailwindCss, Firebase.',
-        time: ' 1 Week.',
-        image: 'https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2FJohn%20Weak%20N%C4%83m%2F4169da53-82ce-4c20-975f-9e6ec9d8e6ee%2Fpr2.png4169da53-82ce-4c20-975f-9e6ec9d8e6ee?alt=media&token=ff3fe59b-b0f2-4725-8c86-e26e038ea414',
-        live: 'http://duydeployment-001-site1.btempurl.com/',
-        source: 'https://github.com/Doanhaiduy/ASP.Net-MVC-project-63130260',
-        active: true,
-        passwordProtection: {
-            username: '11175587',
-            password: '60-dayfreetrial',
-        },
-    },
-    {
-        name: 'Portfolio',
-        description:
-            'Portfolio is a project I built using ReactJs to collect information about myself, including background information, skills, projects,...',
-        technologies: 'ReactJs, TailwindCss.',
-        time: ' 2 Day.',
-        image: 'https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2FJohn%20Weak%20N%C4%83m%2F021fb89f-5f52-4832-a023-d0be6cede6bf%2Fpr7.png021fb89f-5f52-4832-a023-d0be6cede6bf?alt=media&token=12c842ee-4ee3-44b0-b888-b57ce40faa99',
-        live: 'https://www.doanhaiduy.website/',
-        source: 'https://github.com/Doanhaiduy/Portfolio',
-        active: true,
-    },
-    {
-        name: 'Quick Attend',
-        description: 'Quick Attend is a React Native application that supports event attendance using QR codes.',
-        technologies: 'React Native - Typescript, NodeJs (ExpressJs), MongoDb, Firebase, NativeWind, Axios, Jwt.',
-        time: ' 1 week.',
-        image: 'https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2F%C4%90o%C3%A0n%20H%E1%BA%A3i%20Duy%2F0a4555d0-6e0d-4de5-9fcb-ce435f0867c6%2Fz5472447439766_288eb5c4146f784fb112958ecfd106da.jpg0a4555d0-6e0d-4de5-9fcb-ce435f0867c6?alt=media&token=2b55bc31-8dfd-4f44-aa3b-0fae5b573659',
-        live: 'https://drive.google.com/file/d/1U4SHC_7rFxFSn73Uz6LJxnGxniVzYpr3/view',
-        source: 'https://github.com/Doanhaiduy/ThiCuoiKy_mobile_63130260',
-        active: true,
-    },
-    {
-        name: 'League Of Legends App',
-        description:
-            'League Of Legends App is a project about information about generals in the game, which I implemented in a presentation on web programming.',
-        technologies: 'ReactJs, TailwindCss, API (Riot Game).',
-        time: ' 2 Days.',
-        image: 'https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2FJohn%20Weak%20N%C4%83m%2F4169da53-82ce-4c20-975f-9e6ec9d8e6ee%2Fpr3.png4169da53-82ce-4c20-975f-9e6ec9d8e6ee?alt=media&token=1ae47a82-367c-44e3-bd46-00132e4918fa',
-        live: 'https://league-of-legends-ntu.vercel.app/',
-        source: 'https://github.com/Doanhaiduy/league-of-legends-app',
-        active: true,
-    },
-    {
-        name: 'Movie App',
-        description: 'Movie App is the first project I made after learning ReactJs and TailwindCss.',
-        technologies: 'ReactJs, TailwindCss, API (TMDB).',
-        time: ' 1 Week.',
-        image: 'https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2FJohn%20Weak%20N%C4%83m%2F4169da53-82ce-4c20-975f-9e6ec9d8e6ee%2Fpr5.png4169da53-82ce-4c20-975f-9e6ec9d8e6ee?alt=media&token=c2ace9eb-71c0-4d5b-94be-9194eba387d4',
-        live: 'https://the-movie-ntu.vercel.app/',
-        source: 'https://github.com/Doanhaiduy/movie-app',
-        active: true,
-    },
-    {
-        name: 'Anker Shop',
-        description:
-            'Anker Shop is a project I did to make a demo presentation in the system analysis and design class.',
-        technologies: 'ASP.Net MVC, TailwindCss, SQL Server.',
-        time: ' 1 Week.',
-        image: 'https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2FJohn%20Weak%20N%C4%83m%2F4169da53-82ce-4c20-975f-9e6ec9d8e6ee%2Fpr4.png4169da53-82ce-4c20-975f-9e6ec9d8e6ee?alt=media&token=0e66aba0-8192-4699-ac36-5c47e29e4322',
-        live: 'http://doanhaiduy-001-site1.itempurl.com/',
-        source: 'https://github.com/Doanhaiduy/AnkerShop',
-        active: false,
-    },
-    {
-        name: 'Form Validation',
-        description: 'Form Validation is a small project I did after learning about Javascript.',
-        technologies: 'HTML, CSS, Javascript.',
-        time: ' 3 Days.',
-        image: 'https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2FJohn%20Weak%20N%C4%83m%2F4169da53-82ce-4c20-975f-9e6ec9d8e6ee%2Fpr6.png4169da53-82ce-4c20-975f-9e6ec9d8e6ee?alt=media&token=d00d1898-efe6-481f-832c-da4f88aa9a73',
-        live: 'https://doanhaiduy.github.io/Form-validation/',
-        source: 'https://github.com/Doanhaiduy/Form-validation',
-        active: true,
-    },
-];
 function Projects() {
+    const [projects, setProjects] = useState([]);
+
+    const handleGetProjects = async () => {
+        try {
+            const res = await projectApis.HandleProject('/get-all');
+            if (res.data) {
+                setProjects(res.data);
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
+    const handleViewProject = async (id) => {
+        try {
+            var res = await projectApis.HandleProject(`/increment-views/${id}`, null, 'post');
+            if (res.data) {
+                setProjects((prev) =>
+                    prev.map((item) => (item._id === id ? { ...item, views: item.views + 1 } : item))
+                );
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
+    useEffect(() => {
+        handleGetProjects();
+    }, []);
+
     return (
         <div
             className='flex xl:px-[15%] md:px-[8%] px-[20px] items-center justify-center gap-[20px] gap-y-[40px] py-[80px] dark:bg-black bg-white transition-colors dark:text-white '
@@ -110,7 +52,7 @@ function Projects() {
                     </p>
                 </div>
                 <div className='grid 2xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5'>
-                    {ListProject.map((item, index) => (
+                    {projects.map((item, index) => (
                         <motion.div
                             key={index}
                             variants={fadeIn('up', 0.3)}
@@ -125,8 +67,14 @@ function Projects() {
                                 alt={item.name}
                             />
                             <h3 className='text-[24px] pt-4'>{item.name}</h3>
-                            <div className='absolute group-hover:opacity-100 overflow-y-scroll opacity-0 invisible  group-hover:visible top-0 transition-all p-4 text-[20px] bg-black/75 w-full h-full left-0 rounded-[12px] text-left text-white '>
-                                {item.active === false && (
+                            <div className='absolute bottom-2 right-2'>
+                                <p className='text-right text-[14px] mt-4 flex gap-1 items-center'>
+                                    {item.views}
+                                    <GrFormView color='#4b5563' size={24} />
+                                </p>
+                            </div>
+                            <div className='absolute group-hover:opacity-100  opacity-0 invisible  group-hover:visible top-0 transition-all p-4 text-[20px] bg-black/75 w-full h-full left-0 rounded-[12px] text-left text-white '>
+                                {!item.active && (
                                     <p className='bg-red-600 px-2 py-1 text-white inline-block rounded-lg absolute top-2 left-2 text-[14px] font-bold'>
                                         (Hosting Expiry)
                                     </p>
@@ -140,34 +88,25 @@ function Projects() {
                                             {item.description}
                                         </p>
                                         <p>
-                                            <strong>Technologies Used:</strong> {item.technologies}
+                                            <strong>Technologies Used:</strong> {item.technologies.join(', ')}
                                         </p>
-                                        {item.passwordProtection && (
-                                            <>
-                                                <p className='text-red-500 bg-white'>
-                                                    For financial reasons, the hosting used is a free package, so the
-                                                    hosting is password protected when browsing on the web browser,
-                                                    enter username and password below.
-                                                </p>
-                                                <p className=''>
-                                                    <strong>Username:</strong> {item.passwordProtection.username}
-                                                    <br />
-                                                    <strong> Password:</strong> {item.passwordProtection.password}
-                                                </p>
-                                            </>
-                                        )}
                                     </div>
                                     <div className='flex gap-3 items-center justify-center mt-4'>
                                         <a
                                             href={item.live}
+                                            onClick={() => handleViewProject(item._id)}
                                             rel='noreferrer'
                                             target='_Blank'
-                                            className='text-center font-semibold px-2 py-1 w-[96px] bg-orange-600 rounded-[8px] hover:opacity-90'
+                                            className={`text-center font-semibold px-2 py-1 w-[96px] bg-orange-600 rounded-[8px] hover:opacity-90 ${
+                                                !item.active &&
+                                                'select-none pointer-events-none bg-white text-black opacity-40'
+                                            }`}
                                         >
                                             View Live
                                         </a>
                                         <a
                                             href={item.source}
+                                            onClick={() => handleViewProject(item._id)}
                                             rel='noreferrer'
                                             target='_Blank'
                                             className='text-center font-semibold px-2 py-1 w-[96px] bg-orange-600 rounded-[8px] hover:opacity-90'

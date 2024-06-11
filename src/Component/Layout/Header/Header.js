@@ -8,7 +8,6 @@ function Header() {
 
     useEffect(() => {
         window.addEventListener('scroll', stickNavbar);
-
         return () => {
             window.removeEventListener('scroll', stickNavbar);
         };
