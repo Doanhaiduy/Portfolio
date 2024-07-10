@@ -1,4 +1,4 @@
-import React, { useContext} from 'react';
+import React, { useContext } from 'react';
 import { BiSolidQuoteAltLeft } from 'react-icons/bi';
 import { AiFillFacebook, AiFillGithub, AiFillMail, AiFillMobile } from 'react-icons/ai';
 import { fadeIn } from '../../variants';
@@ -26,6 +26,7 @@ function About() {
                         className=''
                     >
                         <img
+                            loading='lazy'
                             src='https://img.icons8.com/?size=256&id=dlN23b953qvQ&format=png'
                             alt=''
                             className='h-[80px]'
@@ -146,6 +147,7 @@ function About() {
                 className='md:w-2/5 flex items-center justify-center'
             >
                 <img
+                    loading='lazy'
                     src={profile?.aboutImage || require('../../assets/images/aboutImage2.jpg')}
                     alt=''
                     className='h-[400px] rounded-full object-cover w-[400px] bg-[#565f7f]'

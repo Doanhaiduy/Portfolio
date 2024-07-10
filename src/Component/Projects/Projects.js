@@ -62,6 +62,7 @@ function Projects() {
                             className=' dark:bg-gray-100 bg-white dark:text-gray-600 font-semibold shadow-xl p-4 rounded-[12px] relative group cursor-pointer'
                         >
                             <img
+                                loading='lazy'
                                 className='w-full h-[300px] object-cover rounded-[12px]'
                                 src={item.image}
                                 alt={item.name}

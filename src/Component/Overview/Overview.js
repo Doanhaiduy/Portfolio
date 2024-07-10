@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import { BiSolidQuoteAltLeft } from 'react-icons/bi';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
@@ -34,6 +34,7 @@ function Overview() {
                         className=''
                     >
                         <img
+                            loading='lazy'
                             src='https://img.icons8.com/?size=256&id=dlN23b953qvQ&format=png'
                             alt=''
                             className='h-[80px]'
@@ -113,6 +114,7 @@ function Overview() {
                 className='md:w-2/5 flex items-center justify-center '
             >
                 <img
+                    loading='lazy'
                     src={profile?.overViewImage || require('../../assets/images/overviewImage.jpg')}
                     alt='OverView'
                     className='md:h-[600px]  object-cover rounded-2xl w-[400px] h-[500px] bg-[#c49fb0]'

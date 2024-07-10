@@ -1,7 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { bouncy } from 'ldrs';
-import ToggleTheme from '../ToggleTheme';
 import { ThemeContext } from '../../context/ThemeContext';
 
 bouncy.register();
@@ -12,6 +11,7 @@ const LoaderIcon = ({ size, speed, color }) => {
 
 export default function PreLoader() {
     const screenControls = useAnimation();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const textControls = [useAnimation(), useAnimation(), useAnimation()];
     const { dark } = useContext(ThemeContext);
 
