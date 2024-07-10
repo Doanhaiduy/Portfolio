@@ -10,16 +10,14 @@ function ProfileContextProvider({ children }) {
     const handleGetProfile = async () => {
         setLoading(true);
         try {
-            const profilePromise = profileApi.HandleProfile('/');
+            const resPromise = profileApi.HandleProfile('/');
+            const delayPromise = new Promise((resolve) => setTimeout(resolve, 5000));
 
-            const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout')), 5000));
+            const [res] = await Promise.all([resPromise, delayPromise]);
 
-            const [res] = await Promise.all([profilePromise, timeoutPromise]);
-
-            if (res && res.data) {
+            if (res.data) {
                 setProfile(res.data);
             }
-
             setLoading(false);
         } catch (error) {
             console.log(error);

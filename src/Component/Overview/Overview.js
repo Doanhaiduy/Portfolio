@@ -68,11 +68,17 @@ function Overview() {
                 >
                     <BiSolidQuoteAltLeft className='inline-block' /> Hello,{' '}
                     <TypeAnimation
-                        // sequence={profile?.overViewTextAnimate?.reduce(
-                        //     (acc, cur) => [...acc, cur, profile.overViewDurationAnimate],
-                        //     []
-                        // )}
-                        sequence={overViewTextAnimate || ['12321 abc', 'lorem ipsum dolor sit amet']}
+                        // sequence={overViewTextAnimate}
+                        sequence={
+                            overViewTextAnimate || [
+                                'I am a 4th year student at Nha Trang University.',
+                                3000,
+                                'I want to become a front-end developer.',
+                                3000,
+                                'You can see more information about me by scrolling down (◕‿↼).',
+                                3000,
+                            ]
+                        }
                         duration={profile?.overViewDurationAnimate || 3000}
                         speed={50}
                         repeat={Infinity}
