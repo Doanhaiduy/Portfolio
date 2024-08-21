@@ -5,12 +5,26 @@ import { motion } from 'framer-motion';
 function Skills(props) {
     return (
         <div
-            className='flex xl:px-[15%] md:px-[8%] px-[20px] items-center justify-center gap-[20px] gap-y-[40px] py-[80px]  transition-colors dark:text-white'
+            className='flex xl:px-[15%] md:px-[8%] px-[20px] items-center justify-center gap-[20px] gap-y-[40px] py-[80px] transition-colors dark:text-white'
             id='skills'
         >
             <div className='-rotate-90 lg:mr-[80px] md:block hidden'>
-                <h3 className=' text-[34px] font-semibold'>Skills</h3>
-                <div className='w-12 h-1 bg-orange-500'></div>
+                <motion.h3
+                    variants={fadeIn('right', 0.3)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{ once: true, amount: 0.7 }}
+                    className=' text-[34px] font-semibold'
+                >
+                    Skills
+                </motion.h3>
+                <motion.div
+                    variants={fadeIn('right', 0.3)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{ once: true, amount: 0.7 }}
+                    className='w-12 h-1 bg-orange-500'
+                ></motion.div>
             </div>
 
             <div>

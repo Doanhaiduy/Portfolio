@@ -1,5 +1,5 @@
-import React from "react";
-import End from "../../End/End";
+import React from 'react';
+import End from '../../End/End';
 
 function Footer(props) {
     return (

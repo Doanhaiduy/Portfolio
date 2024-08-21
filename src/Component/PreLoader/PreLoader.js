@@ -85,7 +85,7 @@ export default function PreLoader() {
                 </motion.span>
                 <motion.span animate={textControls[2]} initial={{ opacity: 0, y: 70 }}>
                     <span className='text-transparent pointer-events-none'>a</span>
-                    Doan Hai Duy ಠ‿↼
+                    Doan Hai Duy
                 </motion.span>
             </div>
             <motion.div

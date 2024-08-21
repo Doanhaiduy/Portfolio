@@ -27,9 +27,10 @@ function Header() {
 
         // Observe each section
         observer.observe(document.getElementById('overview'));
-        observer.observe(document.getElementById('about-me'));
         observer.observe(document.getElementById('skills'));
         observer.observe(document.getElementById('projects'));
+        observer.observe(document.getElementById('about-me'));
+        observer.observe(document.getElementById('contact'));
         observer.observe(document.getElementById('the-end'));
 
         return () => {
@@ -82,6 +83,14 @@ function Header() {
                 >
                     <a href='#about-me'>ABOUT ME</a>
                 </li>
+                <li
+                    className={`cursor-pointer hover:text-orange-500 transition-colors relative nav-menu ${
+                        activeNav === 'contact' ? 'text-orange-500 active' : ''
+                    }`}
+                >
+                    <a href='#contact'>CONTACT</a>
+                </li>
+
                 <li
                     className={`cursor-pointer hover:text-orange-500 transition-colors relative nav-menu ${
                         activeNav === 'the-end' ? 'text-orange-500 active' : ''

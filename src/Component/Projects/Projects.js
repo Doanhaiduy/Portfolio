@@ -37,19 +37,47 @@ function Projects() {
 
     return (
         <div
-            className='flex xl:px-[15%] md:px-[8%] px-[20px] items-center justify-center gap-[20px] gap-y-[40px] py-[80px] dark:bg-black bg-white transition-colors dark:text-white '
+            className='flex xl:px-[15%] md:px-[8%] px-[20px] items-center  justify-center gap-[20px] gap-y-[40px] py-[80px] dark:bg-black bg-white transition-colors dark:text-white '
             id='projects'
         >
             <div className='-rotate-90 lg:mr-[80px] md:block hidden'>
-                <h3 className=' text-[34px] font-semibold'>Projects</h3>
-                <div className='w-[80px] h-1 bg-orange-500'></div>
+                <motion.h3
+                    variants={fadeIn('right', 0.3)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{ once: true, amount: 0.7 }}
+                    className=' text-[34px] font-semibold'
+                >
+                    Projects
+                </motion.h3>
+                <motion.div
+                    variants={fadeIn('right', 0.3)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{ once: true, amount: 0.7 }}
+                    className='w-[80px] h-1 bg-orange-500'
+                ></motion.div>
             </div>
             <div className=''>
                 <div>
-                    <h2 className='text-6xl font-semibold text-orange-600 uppercase'>A few projects</h2>
-                    <p className='text-gray-400 my-4 text-[22px] dark:text-white'>
+                    <motion.h2
+                        variants={fadeIn('up', 0.3)}
+                        initial='hidden'
+                        whileInView={'show'}
+                        viewport={{ once: true, amount: 0.7 }}
+                        className='text-6xl font-semibold text-orange-600 uppercase'
+                    >
+                        A few projects
+                    </motion.h2>
+                    <motion.p
+                        variants={fadeIn('up', 0.4)}
+                        initial='hidden'
+                        whileInView={'show'}
+                        viewport={{ once: true, amount: 0.7 }}
+                        className='text-gray-400 my-4 text-[22px] dark:text-white'
+                    >
                         Here are some of the projects I've done. I hope it will meet your requirements.
-                    </p>
+                    </motion.p>
                 </div>
                 <div className='grid 2xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5'>
                     {projects.map((item, index) => (

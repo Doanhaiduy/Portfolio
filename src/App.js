@@ -9,6 +9,7 @@ import Projects from './Component/Projects/Projects';
 import Skills from './Component/Skills';
 import { ProfileContext } from './context/ProfileContext';
 import PreLoader from './Component/PreLoader';
+import Contact from './Component/Contact';
 
 function App() {
     const { loading } = useContext(ProfileContext);
@@ -23,6 +24,7 @@ function App() {
                 <Skills />
                 <Projects />
                 <About />
+                <Contact />
             </div>
             <HeaderMobile />
             <Footer />

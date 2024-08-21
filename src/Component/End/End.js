@@ -9,10 +9,10 @@ function End(props) {
             className='flex xl:px-[15%] md:px-[8%] px-[20px] items-center justify-center gap-[20px] gap-y-[40px] py-[80px] min-h-screen dark:text-white bg-white dark:bg-black transition-colors'
             id='the-end'
         >
-            <div className='-rotate-90 lg:mr-[80px] md:block hidden opacity-0'>
-                <h3 className=' text-[34px] font-semibold'>End</h3>
+            {/* <div className='-rotate-90 lg:mr-[80px] md:block hidden opacity-0'>
+                <h3 className=' text-[34px] font-semibold'>Projects</h3>
                 <div className='w-12 h-1 bg-orange-500'></div>
-            </div>
+            </div> */}
             <div className=''>
                 <div>
                     <motion.h2

@@ -47,11 +47,12 @@ function Overview() {
                         viewport={{ once: true, amount: 0.7 }}
                     >
                         <div className=''></div>
+
                         <p className='uppercase font-medium flex items-center gap-2 text-2xl text-gray-700 dark:text-white transition-colors'>
-                            <span className='w-1 h-8 bg-orange-500 inline-block '></span> Hi! My name is
+                            <span className='w-1 h-8 bg-orange-500 inline-block '></span> Hi, I'm
                         </p>
                         <TypeAnimation
-                            sequence={[' Doan Hai Duy', 4000, '  Doan Hai Duy', 4000, '   Doan Hai Duy', 4000]}
+                            sequence={[' Doan Hai Duy', 4000]}
                             speed={50}
                             repeat={Infinity}
                             className='uppercase font-bold md:text-7xl text-4xl text-orange-500 my-1 '
