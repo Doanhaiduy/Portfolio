@@ -16,7 +16,7 @@ function App() {
 
     if (loading) return <PreLoader />;
     return (
-        <div className='transition-colors text-center'>
+        <div className='transition-colors text-center '>
             <Header />
             <BackgroundGradients />
             <div>

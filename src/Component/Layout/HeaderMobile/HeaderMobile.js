@@ -40,7 +40,7 @@ function HeaderMobile() {
     return (
         <div
             ref={headerMobileRef}
-            className='md:hidden  py-2 px-4 sm:px-8 rounded-[99px] fixed bottom-[30px] left-1/2 flex gap-2 translate-x-[-50%] bg-gray-400 dark:bg-gray-900 z-[100] text-[20px] sm:text-[22px] text-white dark:text-gray-200 transition-colors'
+            className='md:hidden py-2 px-4 sm:px-8 rounded-[99px] fixed bottom-[30px] left-1/2 flex gap-2 translate-x-[-50%] bg-black/40 dark:bg-gray-900/40 z-[100] text-[14px] sm:text-[22px] text-white dark:text-gray-200 transition-colors border-[2px] border-orange-500'
         >
             <a
                 href='#overview'

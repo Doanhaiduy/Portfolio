@@ -71,7 +71,7 @@ export default function PreLoader() {
 
     return (
         <motion.div
-            className='preloader transition-colors flex-col h-screen w-screen dark:bg-black bg-white  dark:text-white text-black fixed bottom-0 left-0 right-0 z-50 flex justify-center items-center overflow-hidden'
+            className='preloader transition-colors flex-col h-screen w-screen dark:bg-black bg-white  dark:text-white text-black z-50 flex justify-center items-center overflow-hidden'
             initial={{ opacity: 1 }}
             animate={screenControls}
         >

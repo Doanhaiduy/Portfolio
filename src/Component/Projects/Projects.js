@@ -3,6 +3,7 @@ import { fadeIn } from '../../variants';
 import { motion } from 'framer-motion';
 import projectApis from '../../apis/projectApis';
 import { GrFormView } from 'react-icons/gr';
+import ButtonAnimate from '../ButtonAnimate/ButtonAnimate';
 
 function Projects() {
     const [projects, setProjects] = useState([]);
@@ -121,27 +122,18 @@ function Projects() {
                                         </p>
                                     </div>
                                     <div className='flex gap-3 items-center justify-center mt-4'>
-                                        <a
+                                        <ButtonAnimate
+                                            text='View Live'
                                             href={item.live}
                                             onClick={() => handleViewProject(item._id)}
-                                            rel='noreferrer'
-                                            target='_Blank'
-                                            className={`text-center font-semibold px-2 py-1 w-[96px] bg-orange-600 rounded-[8px] hover:opacity-90 ${
-                                                !item.active &&
-                                                'select-none pointer-events-none bg-white text-black opacity-40'
-                                            }`}
-                                        >
-                                            View Live
-                                        </a>
-                                        <a
+                                            classes={'btn-style901 text-center font-semibold px-2 py-1 w-[96px]'}
+                                        />
+
+                                        <ButtonAnimate
+                                            text='View Source'
                                             href={item.source}
-                                            onClick={() => handleViewProject(item._id)}
-                                            rel='noreferrer'
-                                            target='_Blank'
-                                            className='text-center font-semibold px-2 py-1 w-[96px] bg-orange-600 rounded-[8px] hover:opacity-90'
-                                        >
-                                            View Source
-                                        </a>
+                                            classes='btn-style901 text-center font-semibold px-2 py-1 w-[120px]'
+                                        />
                                     </div>
                                 </div>
                             </div>

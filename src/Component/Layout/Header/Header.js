@@ -41,14 +41,18 @@ function Header() {
     const stickNavbar = () => {
         if (window !== undefined) {
             let windowHeight = window.scrollY;
-            windowHeight > 80 ? setStickyClass('!bg-white md:py-5 dark:!bg-black') : setStickyClass('');
+            windowHeight > 80
+                ? setStickyClass(
+                      '!bg-white/40 md:py-5 dark:!bg-black/40  border-none md:border-solid md:border-b-[2px] border-b-orange-500'
+                  )
+                : setStickyClass('');
         }
     };
 
     return (
         <div
             ref={headerRef}
-            className={`flex px-[10%] items-center justify-between md:py-10 fixed  top-0 left-0 z-50 dark:text-white md:w-full transition-all ${stickyClass}`}
+            className={`flex px-[10%] items-center justify-between md:py-10 fixed  border-b-orange-500 border-b-none  top-0 left-0 z-50 dark:text-white md:w-full transition-all ${stickyClass}`}
         >
             <div>
                 <img src='' alt='' />

@@ -13,7 +13,7 @@ function ToggleTheme() {
                 onClick={handleSetDark}
                 className='text-[24px] font-semibold p-1 bg-white/50 md:bg-transparent md:dark:bg-transparent dark:bg-black/50 rounded-full'
             >
-                {dark ? <MdLightMode /> : <MdDarkMode />}
+                {!dark ? <MdLightMode /> : <MdDarkMode />}
             </span>
         </label>
     );

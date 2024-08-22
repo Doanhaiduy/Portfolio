@@ -1,0 +1,101 @@
+.click-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 6px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.35s;
+}
+
+.btn-style500 {
+    border-color: #f97316;
+    color: #f97316;
+}
+.btn-style500:hover {
+    color: #fff;
+    transition-delay: 0.2s;
+    animation: ani500 1s forwards;
+    background: radial-gradient(circle, #f97316 0.2em, transparent 0.3em) 6em 6em/1em 1em,
+        radial-gradient(circle, #f97316 0.2em, transparent 0.3em) 0 0/1em 1em;
+}
+@keyframes ani500 {
+    100% {
+        background-size: 2.375em 2.375em, 0.1em 0.1em;
+    }
+}
+
+.btn-style702 {
+    position: relative;
+    border-color: transparent;
+    color: #fff;
+}
+.btn-style702::before,
+.btn-style702::after {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s;
+    content: '';
+}
+.btn-style702::before {
+    width: 100%;
+    left: 0;
+    border-radius: 5px;
+    background-color: #f97316;
+    z-index: -1;
+}
+.btn-style702::after {
+    width: 0;
+    left: 50%;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    transform: translate(-50%, 0);
+    z-index: 1;
+}
+.btn-style702:hover {
+    color: #f97316;
+}
+.btn-style702:hover::before {
+    transform: scale(0, 1);
+}
+.btn-style702:hover::after {
+    width: 100%;
+    border-color: #f97316;
+    transition-delay: 0.2s;
+}
+
+.btn-style901 {
+    position: relative;
+    background-color: #f97316;
+    border-color: #f97316;
+    color: #fff;
+    overflow: hidden;
+}
+.btn-style901::before {
+    width: 25px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '\f054';
+    font-family: 'FontAwesome';
+    font-weight: bold;
+    font-size: 10px;
+    color: #fff;
+    text-indent: 5px;
+    border-radius: 0 50% 50% 0;
+    background-color: #f97316;
+    transform: translate(-20%, 30%) scale(0, 1);
+    transform-origin: left center;
+    transition: all 0.25s;
+    z-index: 1;
+}
+.btn-style901:hover {
+    text-indent: 20px;
+}
+.btn-style901:hover::before {
+    transform: translate(-20%, 30%) scale(1, 1);
+}

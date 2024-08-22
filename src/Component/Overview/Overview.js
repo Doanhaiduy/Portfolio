@@ -4,6 +4,8 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 import { ProfileContext } from '../../context/ProfileContext';
+import CV from '../../DoanHaiDuy_Resume_FE.pdf';
+import ButtonAnimate from '../ButtonAnimate/ButtonAnimate';
 
 function Overview() {
     const { profile, loading } = useContext(ProfileContext);
@@ -93,24 +95,17 @@ function Overview() {
                     viewport={{ once: true, amount: 0.7 }}
                     className='uppercase flex gap-6 items-center mt-12 font-medium text-xl md:text-2xl justify-center md:justify-start'
                 >
-                    <a
+                    <ButtonAnimate
+                        classes='btn-style702 lg:px-8 text-base lg:text-2xl  px-6 py-2 rounded-md'
                         href={`tel:${profile?.phoneNumber}`}
-                        className='md:px-12  md:py-4 px-6 py-2 rounded-xl bg-orange-500 text-white hover:opacity-90'
-                    >
-                        Contact Me
-                    </a>
-                    <a
-                        href={
-                            profile?.CV ||
-                            'https://firebasestorage.googleapis.com/v0/b/snap-share-78f51.appspot.com/o/post%2F%C4%90o%C3%A0n%20H%E1%BA%A3i%20Duy%2Fca63a85c-ee76-40e7-a0c0-705b37475149%2FDoanHaiDuy_CV.pdfca63a85c-ee76-40e7-a0c0-705b37475149?alt=media&token=0e381291-8db2-4c17-b6db-104913453da8'
-                        }
-                        download='DoanHaiDuy_CV.pdf'
-                        target='_blank'
-                        rel='noreferrer'
-                        className='text-orange-500 uppercase cursor-pointer'
-                    >
-                        View my CV
-                    </a>
+                        text={'Contact Me'}
+                    />
+                    <ButtonAnimate
+                        classes='btn-style500 lg:px-8 text-base lg:text-2xl  px-6 py-2 rounded-md'
+                        href={CV}
+                        text={'Download Resume'}
+                        download='DoanHaiDuy_Resume_FE.pdf'
+                    />
                 </motion.div>
             </div>
             <motion.div
