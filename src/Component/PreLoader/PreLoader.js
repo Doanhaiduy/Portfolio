@@ -91,7 +91,7 @@ export default function PreLoader() {
             <motion.div
                 className='mt-4 dark:text-white text-black'
                 initial='hidden'
-                onEnded='hidden'
+                onEnded={() => screenControls.start({ opacity: 0 })}
                 whileInView={'show'}
                 transition={{ duration: 4, ease: 'linear' }}
             >

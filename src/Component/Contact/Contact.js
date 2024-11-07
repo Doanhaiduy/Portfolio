@@ -98,7 +98,7 @@ export default function Contact() {
                         initial='hidden'
                         whileInView={'show'}
                         viewport={{ once: true, amount: 0.7 }}
-                        className='text-gray-400 my-4 text-[22px] dark:text-white'
+                        className='text-gray-700 my-4 dark:text-white text-[22px] drop-shadow-2xl'
                     >
                         Let's make something awesome together!
                     </motion.p>

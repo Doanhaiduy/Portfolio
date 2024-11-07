@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 function Skills(props) {
     return (
         <div
-            className='flex xl:px-[15%] md:px-[8%] px-[20px] items-center justify-center gap-[20px] gap-y-[40px] py-[80px] transition-colors dark:text-white'
+            className='flex xl:px-[15%] md:px-[8%] px-[20px] items-center justify-center gap-[20px] gap-y-[40px] py-[80px] transition-colors dark:text-white '
             id='skills'
         >
             <div className='-rotate-90 lg:mr-[80px] md:block hidden'>
@@ -35,7 +35,7 @@ function Skills(props) {
                     viewport={{ once: true, amount: 0.7 }}
                 >
                     <h2 className='text-6xl font-semibold text-orange-600 uppercase'>What i do</h2>
-                    <p className='text-gray-400 my-4 dark:text-white text-[22px]'>
+                    <p className='text-gray-700 my-4 dark:text-white text-[22px] drop-shadow-2xl'>
                         Here are some of the skill I've. I hope it will meet your requirements.
                     </p>
                 </motion.div>
@@ -235,7 +235,7 @@ function Skills(props) {
                         >
                             <svg
                                 xmlns='http://www.w3.org/2000/svg'
-                                enable-background='new 0 0 32 32'
+                                // enable-background='new 0 0 32 32'
                                 viewBox='0 0 32 32'
                                 className='md:w-[80px] md:h-[80px] w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] '
                                 id='react'

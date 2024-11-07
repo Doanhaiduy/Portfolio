@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ProfileContextProvider from './context/ProfileContext';
 import ThemeContextProvider from './context/ThemeContext';
-import { Analytics } from '@vercel/analytics/react';
+// import { Analytics } from '@vercel/analytics/react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,7 +13,7 @@ root.render(
         <ThemeContextProvider>
             <ProfileContextProvider>
                 <App />
-                <Analytics />
+                {/* <Analytics /> */}
             </ProfileContextProvider>
         </ThemeContextProvider>
     </React.StrictMode>

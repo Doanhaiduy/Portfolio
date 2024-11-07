@@ -75,7 +75,7 @@ function Projects() {
                         initial='hidden'
                         whileInView={'show'}
                         viewport={{ once: true, amount: 0.7 }}
-                        className='text-gray-400 my-4 text-[22px] dark:text-white'
+                        className='text-gray-700 my-4 dark:text-white text-[22px] drop-shadow-2xl'
                     >
                         Here are some of the projects I've done. I hope it will meet your requirements.
                     </motion.p>
