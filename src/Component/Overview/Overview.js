@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 import { ProfileContext } from '../../context/ProfileContext';
-import CV from '../../../public/assets/media/DoanHaiDuy_Resume_FE.pdf';
+import CV from '../../../public/DoanHaiDuy_Resume_FE.pdf';
 import ButtonAnimate from '../ButtonAnimate/ButtonAnimate';
 
 function Overview() {
