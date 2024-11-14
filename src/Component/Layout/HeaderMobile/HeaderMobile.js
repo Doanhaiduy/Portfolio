@@ -48,7 +48,7 @@ function HeaderMobile() {
                     activeNav === 'overview' ? 'bg-orange-500' : 'bg-transparent hover:bg-orange-500 transition-colors'
                 }`}
             >
-                <AiFillHome />
+                <AiFillHome size={20} />
             </a>
 
             <a
@@ -57,7 +57,7 @@ function HeaderMobile() {
                     activeNav === 'skills' ? 'bg-orange-500' : 'bg-transparent hover:bg-orange-500 transition-colors'
                 }`}
             >
-                <BsFillJournalBookmarkFill />
+                <BsFillJournalBookmarkFill size={20} />
             </a>
             <a
                 href='#projects'
@@ -65,7 +65,7 @@ function HeaderMobile() {
                     activeNav === 'projects' ? 'bg-orange-500' : 'bg-transparent hover:bg-orange-500 transition-colors'
                 }`}
             >
-                <BsFillGrid3X3GapFill />
+                <BsFillGrid3X3GapFill size={20} />
             </a>
             <a
                 href='#about-me'
@@ -73,7 +73,7 @@ function HeaderMobile() {
                     activeNav === 'about-me' ? 'bg-orange-500' : 'bg-transparent hover:bg-orange-500 transition-colors'
                 }`}
             >
-                <BsFillPersonFill />
+                <BsFillPersonFill size={20} />
             </a>
             <a
                 href='#contact'
@@ -81,7 +81,7 @@ function HeaderMobile() {
                     activeNav === 'contact' ? 'bg-orange-500' : 'bg-transparent hover:bg-orange-500 transition-colors'
                 }`}
             >
-                <BsPencilSquare />
+                <BsPencilSquare size={20} />
             </a>
             <a
                 href='#the-end'
@@ -89,7 +89,7 @@ function HeaderMobile() {
                     activeNav === 'the-end' ? 'bg-orange-500' : 'bg-transparent hover:bg-orange-500 transition-colors'
                 }`}
             >
-                <BsEmojiHeartEyesFill />
+                <BsEmojiHeartEyesFill size={20} />
             </a>
         </div>
     );

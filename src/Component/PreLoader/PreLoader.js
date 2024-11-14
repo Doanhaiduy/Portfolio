@@ -66,6 +66,7 @@ export default function PreLoader() {
 
         return () => {
             isMounted = false;
+            document.body.style.overflowY = 'scroll';
         };
     }, [textControls, screenControls]);
 

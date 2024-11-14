@@ -43,7 +43,7 @@ function Header() {
             let windowHeight = window.scrollY;
             windowHeight > 80
                 ? setStickyClass(
-                      '!bg-white/40 md:py-5 dark:!bg-black/40  border-none md:border-solid md:border-b-[2px] border-b-orange-500'
+                      '!bg-white md:py-5 dark:!bg-black  border-none md:border-solid md:border-b-[2px] border-b-orange-500'
                   )
                 : setStickyClass('');
         }

@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 import { ProfileContext } from '../../context/ProfileContext';
-import CV from '../../DoanHaiDuy_Resume_FE.pdf';
+import CV from '../../../public/assets/media/DoanHaiDuy_Resume_FE.pdf';
 import ButtonAnimate from '../ButtonAnimate/ButtonAnimate';
 
 function Overview() {
@@ -101,7 +101,7 @@ function Overview() {
                         text={'Contact Me'}
                     />
                     <ButtonAnimate
-                        classes='btn-style500 lg:px-8 text-base lg:text-2xl  px-6 py-2 rounded-md'
+                        classes='btn-style702 lg:px-8 text-base lg:text-2xl  px-6 py-2 rounded-md'
                         href={CV}
                         text={'Download Resume'}
                         download='DoanHaiDuy_Resume_FE.pdf'

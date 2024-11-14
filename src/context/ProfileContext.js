@@ -11,8 +11,7 @@ function ProfileContextProvider({ children }) {
         setLoading(true);
         try {
             const resPromise = profileApi.HandleProfile('/');
-            const delayPromise = new Promise((resolve) => setTimeout(resolve, 5000));
-
+            const delayPromise = new Promise((resolve) => setTimeout(resolve, 2000));
             const [res] = await Promise.all([resPromise, delayPromise]);
 
             if (res.data) {
