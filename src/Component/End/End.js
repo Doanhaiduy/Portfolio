@@ -16,29 +16,29 @@ function End(props) {
             <div className=''>
                 <div>
                     <motion.h2
-                        variants={fadeIn('up', 0.3)}
+                        variants={fadeIn('right', 0.1)}
                         initial='hidden'
                         whileInView={'show'}
-                        viewport={{ once: true, amount: 0.7 }}
+                        viewport={{ once: true, amount: 0.4 }}
                         className='text-6xl font-semibold text-orange-600 uppercase'
                     >
                         The End
                     </motion.h2>
                     <motion.p
-                        variants={fadeIn('up', 0.4)}
+                        variants={fadeIn('left', 0.2)}
                         initial='hidden'
                         whileInView={'show'}
-                        viewport={{ once: true, amount: 0.7 }}
+                        viewport={{ once: true, amount: 0.4 }}
                         className='my-4 text-[22px]'
                     >
                         Finally, I would like to say <strong className='text-orange-500'>"Thank You"</strong> for spent
                         time to look at my CV profile.
                     </motion.p>
                     <motion.p
-                        variants={fadeIn('up', 0.5)}
+                        variants={fadeIn('right', 0.1)}
                         initial='hidden'
                         whileInView={'show'}
-                        viewport={{ once: true, amount: 0.7 }}
+                        viewport={{ once: true, amount: 0.4 }}
                         className='text-[22px]'
                     >
                         You're a flower on earth, let's make your life beautiful and meaningful{' '}

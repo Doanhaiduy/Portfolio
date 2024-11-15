@@ -19,57 +19,57 @@ function About() {
             <div className='text-left flex-1 xl:ml-[80px] md:ml-[40px]'>
                 <div className='flex gap-1 items-center'>
                     <motion.div
-                        variants={fadeIn('up', 0.3)}
+                        variants={fadeIn('right', 0.1)}
                         initial='hidden'
                         whileInView={'show'}
-                        viewport={{ once: true, amount: 0.7 }}
+                        viewport={{ once: true, amount: 0.4 }}
                         className=''
                     >
                         <img
                             loading='lazy'
                             src='https://img.icons8.com/?size=256&id=dlN23b953qvQ&format=png'
                             alt=''
-                            className='h-[80px]'
+                            className='h-[80px] select-none'
                         />
                     </motion.div>
                     <motion.div
-                        variants={fadeIn('up', 0.3)}
+                        variants={fadeIn('right', 0.1)}
                         initial='hidden'
                         whileInView={'show'}
-                        viewport={{ once: true, amount: 0.7 }}
+                        viewport={{ once: true, amount: 0.4 }}
                     >
                         <div className=''></div>
-                        <p className='uppercase font-medium flex items-center gap-2 text-2xl text-gray-700 dark:text-white'>
+                        <p className='rightpercase font-medium flex items-center gap-2 text-2xl text-gray-700 dark:text-white'>
                             <span className='w-1 h-8 bg-orange-500 inline-block '></span> About me
                         </p>
                         <TypeAnimation
                             sequence={[' Doan Hai Duy', 4000, '  Doan Hai Duy', 4000, '   Doan Hai Duy', 4000]}
                             speed={50}
                             repeat={Infinity}
-                            className='uppercase font-bold text-4xl md:text-7xl text-orange-500 my-1 '
+                            className='rightpercase font-bold text-4xl md:text-7xl text-orange-500 my-1 '
                             wrapper='h2'
                         />
                     </motion.div>
                 </div>
                 <motion.p
-                    variants={fadeIn('up', 0.4)}
+                    variants={fadeIn('right', 0.2)}
                     initial='hidden'
                     whileInView={'show'}
-                    viewport={{ once: true, amount: 0.7 }}
+                    viewport={{ once: true, amount: 0.4 }}
                     className='text-[20px] text-gray-600 mt-4 dark:text-white'
                 >
                     <BiSolidQuoteAltLeft className='inline-block' /> Here's my info. I hope we can work together.
                 </motion.p>
                 <div className=' grid grid-cols-2 gap-6 items-center mt-12 2xl:text-[20px] dark:text-white'>
                     <motion.a
-                        variants={fadeIn('up', 0.5)}
+                        variants={fadeIn('right', 0.2)}
                         initial='hidden'
                         whileInView={'show'}
-                        viewport={{ once: true, amount: 0.7 }}
+                        viewport={{ once: true, amount: 0.4 }}
                         href={`mailto:${profile?.email || 'haiduytbt2k3@gmail.com'}`}
                         className='flex gap-2 items-center'
                     >
-                        <div className='p-3 text-[20px] shadow-xl rounded-[8px]  h-full  uppercase'>
+                        <div className='p-3 text-[20px] shadow-xl rounded-[8px]  h-full  rightpercase'>
                             <AiFillMail />
                         </div>
                         <div className=''>
@@ -80,14 +80,14 @@ function About() {
                         </div>
                     </motion.a>
                     <motion.a
-                        variants={fadeIn('up', 0.5)}
+                        variants={fadeIn('right', 0.2)}
                         initial='hidden'
                         whileInView={'show'}
-                        viewport={{ once: true, amount: 0.7 }}
+                        viewport={{ once: true, amount: 0.4 }}
                         href={`tel:${profile?.phoneNumber || '(+84) 399 998 943'}`}
                         className='flex gap-2 items-center'
                     >
-                        <div className='p-3 text-[20px] shadow-xl rounded-[8px]  h-full  uppercase'>
+                        <div className='p-3 text-[20px] shadow-xl rounded-[8px]  h-full  rightpercase'>
                             <AiFillMobile />
                         </div>
                         <div className=''>
@@ -98,16 +98,16 @@ function About() {
                         </div>
                     </motion.a>
                     <motion.a
-                        variants={fadeIn('up', 0.6)}
+                        variants={fadeIn('right', 0.2)}
                         initial='hidden'
                         whileInView={'show'}
-                        viewport={{ once: true, amount: 0.7 }}
+                        viewport={{ once: true, amount: 0.4 }}
                         href={`https://${profile?.githubUrl || 'github.com/Doanhaiduy'}`}
                         target='_blank'
                         rel='noreferrer'
                         className='flex gap-2 items-center'
                     >
-                        <div className='p-3 text-[20px] shadow-xl rounded-[8px]  h-full  uppercase'>
+                        <div className='p-3 text-[20px] shadow-xl rounded-[8px]  h-full  rightpercase'>
                             <AiFillGithub />
                         </div>
                         <div className=''>
@@ -118,10 +118,10 @@ function About() {
                         </div>
                     </motion.a>
                     <motion.a
-                        variants={fadeIn('up', 0.6)}
+                        variants={fadeIn('right', 0.2)}
                         initial='hidden'
                         whileInView={'show'}
-                        viewport={{ once: true, amount: 0.7 }}
+                        viewport={{ once: true, amount: 0.4 }}
                         href={`https://${profile?.facebookUrl || 'facebook.com/Doanhaiduy.Profile'}`}
                         target='_blank'
                         className='flex gap-2 items-center'
@@ -140,10 +140,10 @@ function About() {
                 </div>
             </div>
             <motion.div
-                variants={fadeIn('up', 0.3)}
+                variants={fadeIn('left', 0.1)}
                 initial='hidden'
                 whileInView={'show'}
-                viewport={{ once: true, amount: 0.7 }}
+                viewport={{ once: true, amount: 0.4 }}
                 className='md:w-2/5 flex items-center justify-center'
             >
                 <img

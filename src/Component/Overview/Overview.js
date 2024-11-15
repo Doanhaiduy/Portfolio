@@ -29,7 +29,7 @@ function Overview() {
             <div className='md:text-left text-center flex-1  xl:ml-[80px] '>
                 <div className='flex gap-1 items-center justify-center md:justify-start'>
                     <motion.div
-                        variants={fadeIn('up', 0.3)}
+                        variants={fadeIn('up', 0.1)}
                         initial='hidden'
                         whileInView={'show'}
                         viewport={{ once: true, amount: 0.7 }}
@@ -39,11 +39,11 @@ function Overview() {
                             loading='lazy'
                             src='https://img.icons8.com/?size=256&id=dlN23b953qvQ&format=png'
                             alt=''
-                            className='h-[80px]'
+                            className='h-[80px] select-none'
                         />
                     </motion.div>
                     <motion.div
-                        variants={fadeIn('up', 0.3)}
+                        variants={fadeIn('up', 0.1)}
                         initial='hidden'
                         whileInView={'show'}
                         viewport={{ once: true, amount: 0.7 }}
@@ -63,7 +63,7 @@ function Overview() {
                     </motion.div>
                 </div>
                 <motion.p
-                    variants={fadeIn('up', 0.4)}
+                    variants={fadeIn('up', 0.1)}
                     initial='hidden'
                     whileInView={'show'}
                     viewport={{ once: true, amount: 0.7 }}
@@ -89,7 +89,7 @@ function Overview() {
                     />
                 </motion.p>
                 <motion.div
-                    variants={fadeIn('up', 0.5)}
+                    variants={fadeIn('up', 0.2)}
                     initial='hidden'
                     whileInView={'show'}
                     viewport={{ once: true, amount: 0.7 }}
@@ -109,7 +109,7 @@ function Overview() {
                 </motion.div>
             </div>
             <motion.div
-                variants={fadeIn('left', 0.3)}
+                variants={fadeIn('left', 0.1)}
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{ once: true, amount: 0.7 }}
@@ -119,7 +119,7 @@ function Overview() {
                     loading='lazy'
                     src={profile?.overViewImage || require('../../assets/images/overviewImage.jpg')}
                     alt='OverView'
-                    className='md:h-[600px]  object-cover rounded-2xl w-[400px] h-[500px] bg-[#c49fb0]'
+                    className='md:h-[600px]  object-cover rounded-2xl w-[400px] h-[500px] bg-[#c49fb0] select-none'
                 />
             </motion.div>
         </div>

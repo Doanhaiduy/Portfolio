@@ -43,38 +43,38 @@ function Projects() {
         >
             <div className='-rotate-90 lg:mr-[80px] md:block hidden'>
                 <motion.h3
-                    variants={fadeIn('right', 0.3)}
+                    variants={fadeIn('right', 0.1)}
                     initial='hidden'
                     whileInView={'show'}
-                    viewport={{ once: true, amount: 0.7 }}
+                    viewport={{ once: true, amount: 0.4 }}
                     className=' text-[34px] font-semibold'
                 >
                     Projects
                 </motion.h3>
                 <motion.div
-                    variants={fadeIn('right', 0.3)}
+                    variants={fadeIn('right', 0.1)}
                     initial='hidden'
                     whileInView={'show'}
-                    viewport={{ once: true, amount: 0.7 }}
+                    viewport={{ once: true, amount: 0.4 }}
                     className='w-[80px] h-1 bg-orange-500'
                 ></motion.div>
             </div>
             <div className=''>
                 <div>
                     <motion.h2
-                        variants={fadeIn('up', 0.3)}
+                        variants={fadeIn('up', 0.1)}
                         initial='hidden'
                         whileInView={'show'}
-                        viewport={{ once: true, amount: 0.7 }}
+                        viewport={{ once: true, amount: 0.4 }}
                         className='text-6xl font-semibold text-orange-600 uppercase'
                     >
                         A few projects
                     </motion.h2>
                     <motion.p
-                        variants={fadeIn('up', 0.4)}
+                        variants={fadeIn('up', 0.1)}
                         initial='hidden'
                         whileInView={'show'}
-                        viewport={{ once: true, amount: 0.7 }}
+                        viewport={{ once: true, amount: 0.4 }}
                         className='text-gray-700 my-4 dark:text-white text-[22px] drop-shadow-2xl'
                     >
                         Here are some of the projects I've done. I hope it will meet your requirements.
@@ -84,15 +84,15 @@ function Projects() {
                     {projects.map((item, index) => (
                         <motion.div
                             key={index}
-                            variants={fadeIn('up', 0.3)}
+                            variants={fadeIn('up', 0.1)}
                             initial='hidden'
                             whileInView={'show'}
-                            viewport={{ once: true, amount: 0.7 }}
+                            viewport={{ once: true, amount: 0.4 }}
                             className=' dark:bg-gray-100 bg-white dark:text-gray-600 font-semibold shadow-xl p-4 rounded-[12px] relative group cursor-pointer'
                         >
                             <img
                                 loading='lazy'
-                                className='w-full h-[300px] object-cover rounded-[12px]'
+                                className='w-full h-[300px] object-cover rounded-[12px] select-none'
                                 src={item.image}
                                 alt={item.name}
                             />

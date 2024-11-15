@@ -8,17 +8,17 @@ const SkillItem = ({ skill }) => {
         <motion.a
             href={skill?.href}
             target='_blank'
-            variants={fadeIn('up', 0.3)}
+            variants={fadeIn('up', 0.2)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{ once: true, amount: 0.7 }}
+            viewport={{ once: true, amount: 0.4 }}
             className='lg:p-8  p-4 dark:bg-gray-100 bg-white flex flex-col items-center justify-center rounded-[8px] shadow-xl cursor-pointer hover:!scale-110 !transition-transform'
         >
             <img
                 src={skill?.image}
                 alt={skill?.name}
                 loading='lazy'
-                className='md:w-[80px] md:h-[80px] w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] mb-2'
+                className='md:w-[80px] md:h-[80px] w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] mb-2 select-none'
             />
             <span className='text-[22px] dark:text-gray-600 font-medium'>{skill?.name}</span>
         </motion.a>
@@ -33,7 +33,6 @@ function Skills(props) {
             const res = await skillApis.HandleSkill('/get-all');
             if (res.data) {
                 setSkills(res.data);
-                console.log(res.data);
             }
         } catch (error) {
             console.log(error);
@@ -51,29 +50,29 @@ function Skills(props) {
         >
             <div className='-rotate-90 lg:mr-[80px] md:block hidden'>
                 <motion.h3
-                    variants={fadeIn('right', 0.3)}
+                    variants={fadeIn('right', 0.1)}
                     initial='hidden'
                     whileInView={'show'}
-                    viewport={{ once: true, amount: 0.7 }}
+                    viewport={{ once: true, amount: 0.4 }}
                     className=' text-[34px] font-semibold'
                 >
                     Skills
                 </motion.h3>
                 <motion.div
-                    variants={fadeIn('right', 0.3)}
+                    variants={fadeIn('right', 0.1)}
                     initial='hidden'
                     whileInView={'show'}
-                    viewport={{ once: true, amount: 0.7 }}
+                    viewport={{ once: true, amount: 0.4 }}
                     className='w-12 h-1 bg-orange-500'
                 ></motion.div>
             </div>
 
             <div>
                 <motion.div
-                    variants={fadeIn('up', 0.3)}
+                    variants={fadeIn('up', 0.1)}
                     initial='hidden'
                     whileInView={'show'}
-                    viewport={{ once: true, amount: 0.7 }}
+                    viewport={{ once: true, amount: 0.4 }}
                 >
                     <h2 className='text-6xl font-semibold text-orange-600 uppercase'>What i do</h2>
                     <p className='text-gray-700 my-4 dark:text-white text-[22px] drop-shadow-2xl'>

@@ -49,7 +49,6 @@ export default function Contact() {
         // send email
         if (name && email && message && validateEmail(email)) {
             const nameCapitalized = titleCase(name);
-            console.log(nameCapitalized);
             setIsLoading(true);
             try {
                 const res = await profileApi.HandleProfile('/send-message', { name, email, message }, 'post');
@@ -85,10 +84,10 @@ export default function Contact() {
             <div className='w-2/3'>
                 <div>
                     <motion.h2
-                        variants={fadeIn('up', 0.3)}
+                        variants={fadeIn('up', 0.1)}
                         initial='hidden'
                         whileInView={'show'}
-                        viewport={{ once: true, amount: 0.7 }}
+                        viewport={{ once: true, amount: 0.4 }}
                         className='text-6xl font-semibold text-orange-600 uppercase'
                     >
                         Contact
@@ -97,17 +96,17 @@ export default function Contact() {
                         variants={fadeIn('up', 0.4)}
                         initial='hidden'
                         whileInView={'show'}
-                        viewport={{ once: true, amount: 0.7 }}
+                        viewport={{ once: true, amount: 0.4 }}
                         className='text-gray-700 my-4 dark:text-white text-[22px] drop-shadow-2xl'
                     >
                         Let's make something awesome together!
                     </motion.p>
                 </div>
                 <motion.section
-                    variants={fadeIn('up', 0.3)}
+                    variants={fadeIn('up', 0.1)}
                     initial='hidden'
                     whileInView={'show'}
-                    viewport={{ once: true, amount: 0.7 }}
+                    viewport={{ once: true, amount: 0.4 }}
                     className='py-6'
                 >
                     <form className='flex flex-col py-6 space-y-4 md:py-0 md:px-6 w-full dark:text-black '>
