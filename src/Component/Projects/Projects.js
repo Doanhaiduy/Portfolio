@@ -1,12 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { fadeIn } from '../../variants';
 import { motion } from 'framer-motion';
 import projectApis from '../../apis/projectApis';
 import { GrFormView } from 'react-icons/gr';
 import ButtonAnimate from '../ButtonAnimate/ButtonAnimate';
+import TrueFocus from '../TrueFocus/TrueFocus';
+import { ThemeContext } from '../../context/ThemeContext';
+import ShinyText from '../ShinyText/ShinyText';
 
 function Projects() {
     const [projects, setProjects] = useState([]);
+    const { dark } = useContext(ThemeContext);
 
     const handleGetProjects = async () => {
         try {
@@ -24,7 +28,7 @@ function Projects() {
             var res = await projectApis.HandleProject(`/increment-views/${id}`, null, 'post');
             if (res.data) {
                 setProjects((prev) =>
-                    prev.map((item) => (item._id === id ? { ...item, views: item.views + 1 } : item))
+                    prev.map((item) => (item._id === id ? { ...item, views: item.views + 1 } : item)),
                 );
             }
         } catch (error) {
@@ -38,7 +42,7 @@ function Projects() {
 
     return (
         <div
-            className='flex xl:px-[15%] md:px-[8%] px-[20px] items-center  justify-center gap-[20px] gap-y-[40px] py-[80px] dark:bg-black bg-white transition-colors dark:text-white '
+            className='flex xl:px-[15%] md:px-[8%] px-[20px] items-center  justify-center gap-[20px] gap-y-[40px] py-[80px] dark:bg-black bg-[#f9f9f9] transition-colors dark:text-white '
             id='projects'
         >
             <div className='-rotate-90 lg:mr-[80px] md:block hidden'>
@@ -68,7 +72,14 @@ function Projects() {
                         viewport={{ once: true, amount: 0.4 }}
                         className='text-6xl font-semibold text-orange-600 uppercase'
                     >
-                        A few projects
+                        <TrueFocus
+                            sentence='Things I’ve Built'
+                            manualMode={false}
+                            blurAmount={5}
+                            borderColor='red'
+                            animationDuration={1}
+                            pauseBetweenAnimations={0.5}
+                        />
                     </motion.h2>
                     <motion.p
                         variants={fadeIn('up', 0.1)}
@@ -77,7 +88,13 @@ function Projects() {
                         viewport={{ once: true, amount: 0.4 }}
                         className='text-gray-700 my-4 dark:text-white text-[22px] drop-shadow-2xl'
                     >
-                        Here are some of the projects I've done. I hope it will meet your requirements.
+                        <ShinyText
+                            text={`Here are some of the projects I've done. I hope it will meet your requirements.`}
+                            isDarkBackground={dark}
+                            disabled={false}
+                            speed={4}
+                            className='custom-class'
+                        />
                     </motion.p>
                 </div>
                 <div className='grid 2xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5'>

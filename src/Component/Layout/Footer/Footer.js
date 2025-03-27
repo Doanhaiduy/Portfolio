@@ -5,8 +5,8 @@ function Footer(props) {
     return (
         <div className='bg-white dark:bg-black'>
             <End />
-            <div className='text:black dark:text-white bg-white dark:bg-black h-[40px] flex gap-1 justify-center'>
-                <p>Copyright © 2024 All Rights Reserved, </p>
+            <div className='text:black dark:text-white bg-[#f9f9f9] dark:bg-black h-[40px] flex gap-1 justify-center'>
+                <p>Copyright © 2025 All Rights Reserved, </p>
                 <p>
                     built and designed by{' '}
                     <a

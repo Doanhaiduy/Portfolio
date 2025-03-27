@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { validateEmail } from '../../helpers';
 import profileApi from '../../apis/profileApis';
 import { fadeIn } from '../../variants';
 import { motion } from 'framer-motion';
+import ShinyText from '../ShinyText/ShinyText';
+import { ThemeContext } from '../../context/ThemeContext';
 
 function titleCase(str) {
     var splitStr = str.toLowerCase().split(' ');
@@ -23,6 +25,7 @@ export default function Contact() {
     const [error, setError] = React.useState([]);
     const [successMessage, setSuccessMessage] = React.useState('');
     const [isLoading, setIsLoading] = React.useState(false);
+    const { dark } = useContext(ThemeContext);
 
     const handleSubmit = async (e) => {
         setError([]);
@@ -54,7 +57,7 @@ export default function Contact() {
                 const res = await profileApi.HandleProfile('/send-message', { name, email, message }, 'post');
                 if (res.data) {
                     setSuccessMessage(
-                        `I truly appreciate your thoughtful message. It means a lot to me!, wish ${nameCapitalized} have a nice day!`
+                        `I truly appreciate your thoughtful message. It means a lot to me!, wish ${nameCapitalized} have a nice day!`,
                     );
                     setName('');
                     setEmail('');
@@ -78,7 +81,7 @@ export default function Contact() {
 
     return (
         <div
-            className='flex xl:px-[15%] md:px-[8%] px-[20px] items-center justify-center gap-[20px] gap-y-[40px] py-[80px] min-h-screen dark:text-white bg-white dark:bg-black transition-colors'
+            className='flex xl:px-[15%] md:px-[8%] px-[20px] items-center justify-center gap-[20px] gap-y-[40px] py-[80px] min-h-screen dark:text-white bg-[#f9f9f9] dark:bg-black transition-colors'
             id='contact'
         >
             <div className='w-2/3'>
@@ -99,7 +102,13 @@ export default function Contact() {
                         viewport={{ once: true, amount: 0.4 }}
                         className='text-gray-700 my-4 dark:text-white text-[22px] drop-shadow-2xl'
                     >
-                        Let's make something awesome together!
+                        <ShinyText
+                            text={`Let's make something awesome together!`}
+                            isDarkBackground={dark}
+                            disabled={false}
+                            speed={4}
+                            className='custom-class'
+                        />
                     </motion.p>
                 </div>
                 <motion.section
@@ -134,7 +143,7 @@ export default function Contact() {
                                         <span key={index} className='text-red-500 text-sm'>
                                             {err.message}
                                         </span>
-                                    )
+                                    ),
                             )}
                         </label>
                         <label className='flex flex-col items-start'>
@@ -161,7 +170,7 @@ export default function Contact() {
                                         <span key={index} className='text-red-500 text-sm'>
                                             {err.message}
                                         </span>
-                                    )
+                                    ),
                             )}
                         </label>
                         <label className='flex flex-col items-start'>
@@ -188,7 +197,7 @@ export default function Contact() {
                                         <span key={index} className='text-red-500 text-sm'>
                                             {err.message}
                                         </span>
-                                    )
+                                    ),
                             )}
                         </label>
                         {isLoading ? (

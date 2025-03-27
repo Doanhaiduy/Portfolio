@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 import { ProfileContext } from '../../context/ProfileContext';
-import CV from '../../../public/DoanHaiDuy_Resume_FE.pdf';
+import CV from '../../../public/DoanHaiDuy_Resume.pdf';
 import ButtonAnimate from '../ButtonAnimate/ButtonAnimate';
 
 function Overview() {
@@ -17,7 +17,7 @@ function Overview() {
     if (!loading) {
         overViewTextAnimate = profile?.overViewTextAnimate?.reduce(
             (acc, cur) => [...acc, cur, profile.overViewDurationAnimate],
-            []
+            [],
         );
     }
 
@@ -104,7 +104,7 @@ function Overview() {
                         classes='btn-style702 lg:px-8 text-base lg:text-2xl  px-6 py-2 rounded-md'
                         href={CV}
                         text={'Download Resume'}
-                        download='DoanHaiDuy_Resume_FE.pdf'
+                        download='DoanHaiDuy_Resume.pdf'
                     />
                 </motion.div>
             </div>

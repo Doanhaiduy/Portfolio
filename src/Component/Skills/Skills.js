@@ -1,7 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { fadeIn } from '../../variants';
 import { motion } from 'framer-motion';
 import skillApis from '../../apis/skillApis';
+import TrueFocus from '../TrueFocus/TrueFocus';
+import ShinyText from '../ShinyText/ShinyText';
+import { ThemeContext } from '../../context/ThemeContext';
 
 const SkillItem = ({ skill }) => {
     return (
@@ -27,6 +30,7 @@ const SkillItem = ({ skill }) => {
 
 function Skills(props) {
     const [skills, setSkills] = useState([]);
+    const { dark } = useContext(ThemeContext);
 
     const handleGetSkills = async () => {
         try {
@@ -74,9 +78,24 @@ function Skills(props) {
                     whileInView={'show'}
                     viewport={{ once: true, amount: 0.4 }}
                 >
-                    <h2 className='text-6xl font-semibold text-orange-600 uppercase'>What i do</h2>
+                    <h2 className='text-6xl font-semibold text-orange-600 uppercase'>
+                        <TrueFocus
+                            sentence='What i do'
+                            manualMode={false}
+                            blurAmount={5}
+                            borderColor='red'
+                            animationDuration={1}
+                            pauseBetweenAnimations={0.5}
+                        />
+                    </h2>
                     <p className='text-gray-700 my-4 dark:text-white text-[22px] drop-shadow-2xl'>
-                        Here are some of the skill I've. I hope it will meet your requirements.
+                        <ShinyText
+                            text={`Here are some of the skill I've. I hope it will meet your requirements.`}
+                            isDarkBackground={dark}
+                            disabled={false}
+                            speed={4}
+                            className='custom-class'
+                        />
                     </p>
                 </motion.div>
                 <div className='flex items-center gap-5 justify-center'>

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 function End(props) {
     return (
         <div
-            className='flex xl:px-[15%] md:px-[8%] px-[20px] items-center justify-center gap-[20px] gap-y-[40px] py-[80px] min-h-screen dark:text-white bg-white dark:bg-black transition-colors'
+            className='flex xl:px-[15%] md:px-[8%] px-[20px] items-center justify-center gap-[20px] gap-y-[40px] py-[80px] min-h-screen dark:text-white bg-[#f9f9f9] dark:bg-black transition-colors'
             id='the-end'
         >
             {/* <div className='-rotate-90 lg:mr-[80px] md:block hidden opacity-0'>

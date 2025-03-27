@@ -22,7 +22,7 @@ function Header() {
                     }
                 });
             },
-            { threshold: 0.2 } // Adjust the threshold as needed
+            { threshold: 0.2 }, // Adjust the threshold as needed
         );
 
         // Observe each section
@@ -43,7 +43,7 @@ function Header() {
             let windowHeight = window.scrollY;
             windowHeight > 80
                 ? setStickyClass(
-                      '!bg-white md:py-5 dark:!bg-black  border-none md:border-solid md:border-b-[2px] border-b-orange-500'
+                      '!bg-[#f9f9f9] md:py-5 dark:!bg-black  border-none md:border-solid md:border-b-[2px] border-b-orange-500',
                   )
                 : setStickyClass('');
         }
